@@ -1,0 +1,3080 @@
+﻿<!DOCtype html>
+<html lang='fr-FR'> 
+	<head>
+		<title> Bienvenue sur ma page WEB !!! </title>
+		<meta name="Description" content="Description du site " />
+		<meta charset="utf-8" />  <!-- en html5 -->
+		<meta name="author" content="Boris, WebAgence" />
+	</head>
+	<body>
+
+	<!-- 
+
+
+
+
+
+
+
+
+
+
+
+			TITRE : COURS HTML (Hypertext Markup Language)
+
+
+
+			Extension                    :   .html, .htm 
+			Développé par                :   World Wide Web Consortium (w3c) & WHATWG
+			Type de format               :   Langage de balisage, publication (affichage) et structuration
+			Extension du (heritier de)   :   GML, SGML
+			Standard(s)                  :   ISO/IEC 15445
+			W3C HTML                     :   5
+			Spécification                :   Format ouvert
+
+
+
+
+
+
+
+
+
+
+
+		L’Hypertext Markup Language, généralement abrégé HTML.
+		
+			c'est le format de données conçu pour structurer les pages web.
+			
+			Le Langage HTML permet : 
+				de structurer sémantiquement;
+				de mettre en forme le contenu des pages;
+				d’inclure des ressources multimédias dont des images; 
+				des formulaires de saisie;
+				des programmes informatiques;
+				de créer une interaction lorsque grace à des langages de programmation;
+				de créer des documents interopérables avec des équipements très variés.
+			
+			En 1991, Le langage HTML dérivé du langage SGML a été crée par Tim Berners-Lee.
+			Puis le réseau Web a été inventé par Tim Berners-Lee et Robert Cailliau plusieurs années après Internet (1980).
+
+
+
+
+
+
+
+
+
+
+			/***************************************************/
+			/*******/ Organisme de gestion d’Internet /*******/
+			/***************************************************/
+
+
+
+			ISO ( International Organization for Standardization ) :
+				Cette organisation émet des normes pour rendre inter opérables plusieurs systèmes.
+
+
+
+			ISOC ( Internet SOCiety ) :
+				Association de professionnels gerant l'évolution de l'Internet dans le monde, sous différents aspects  :  
+				utilisation de l'Internet, conséquences sociales, politiques et techniques.
+
+
+			W3C ( World Wide Web Consortium ) :
+				Le World Wide Web Consortium, est un organisme chargé de normalise et de promouvoir la compatibilité des technologies Web telles que HTML, XHTML, XML, RDF, CSS, PNG, SVG, SOAP...
+
+
+
+			ICANN ( Internet Corporation for Assigned Names and Numbers ) :
+				Cette organisation doit gerer les noms de domaine et aussi aux adresses IP (numéros identifiant chaque machine sur l'internet) et aux protocoles permettant aux machines de communiquer entre elles.
+
+
+
+			IETF ( The Internet Engineering Task Force ) :
+				L'IETF est un organe de l'ISOC . Fondé sur le volontariat, il fédère des groupes de recherche et développement travaillant sur les technologies et protocoles internet. Chaque groupe de travail a pour mission d'étudier un sujet particulier. L'IETF contribue ainsi au développement de l'internet et en publiant des standards (RFC).
+
+
+
+			INTERNIC ( Internet Network Information Center ) :
+				L'InterNIC fourni les services d'enregistrement aussi bien des adresses IP que des noms de domaine génériques (".com", ".net", ".org", ...).
+
+
+
+			AFNIC ( Association Française pour le Nommage Internet en Coopération ) :
+				L'AFNIC est le centre de gestion (registre) et de ressources (NIC France) des noms de domaine Internet géographiques (ccTLD) pour la France  :  ".fr", ".tf", ".yt", ".pm", ".wf", ".re" (Ile de la Réunion).
+
+
+
+			RFC ( les standards Internet ) :
+				Les requests for comment (RFC), littéralement demande de commentaires, sont une série numérotée de documents électroniques documentant les aspects techniques d'Internet. Peu de RFC sont des standards, mais tous les standards d'Internet sont des RFC.
+
+
+
+
+
+
+
+
+
+
+
+			/*******************************************************/
+			/************/  definitions des réseaux :  /************/
+			/*******************************************************/
+
+
+
+			Définition LAN         : réseau privé de petit dimension, appartenant à une entreprise ou un particulier
+			Définition WAN         : réseau de télécommunication public de grande dimension, appartenant au operateur public 
+			Définition Internet    : réseau wan utilisant le protocole TCP/IP
+			Définition WEB         : réseau wan utilisant Internet (TCP/IP) avec les composants HTTP, HTML et URL (avec les DNS)
+			Définition Serveur WEB : serveur HTTP hébergeant les pages HTML
+			Définition Intranet    : serveur WEB privé réservé au réseau LAN d'une entreprise
+			Définition Extranet    : serveur WEB public réservé aux partenaires de l'entreprise
+			Définition serveur DNS : serveur de résolution de nom de domaine Internet en adresse en IP
+			Définition HTML        : Langage de publication utilisant un marquage (balise) afin de décrire le contenu WEB
+			Définition CSS         : Langage de publication utilisé pour la mise en forme et le design des documents HTML
+
+
+
+
+
+
+
+
+
+
+
+			/********************************************************/
+			/************/  principales liaisons WAN :  /************/
+			/********************************************************/
+
+
+
+			_R.T.C " Réseau Téléphonique Commuté "  :  
+				Réseau analogique, destiné au transport de la voix, utilisé avec un modem pour transporter des données informatiques.
+				Débit 56 Kbps sens Descendant & 33 Kbps sens montant.
+
+			_ADSL " Asymetric Digital Subscriber Line "  :  
+				C'est une technologie permettant le transfert de plusieurs mégabits par seconde sur la ligne téléphonique classique. La "paire cuivrée", peut acheminer les données du Net à grande vitesse, et ce grâce à une technique ne nécessitant aucune adaptation de ces lignes. Débit 2 Mbps sens Descendant & 160 Kbps sens montant.
+				Vitesse 1,5 Mbps 6 Mbps 13 Mbps 52 Mbps
+				Distance entre utilisateur et provider 6 Km 4 Km 1,5 Km 300 m
+
+			_Câble " Câble "  :  
+				Réseau analogique, destiné au transport de la voix, utilisé avec un modem pour transporter des données informatiques.
+				Débit 56 Kbps sens Descendant & 33 Kbps sens montant.
+
+			_L.S " Liaisons spécialisées "  :  
+				Liaison dédiée à un client et utilisées que par lui, La connexion est permanente, il n’y a donc aucun numéro à composer. La tarification est forfaitaire et dépend du nombre de fils (2 ou 4), de la ligne (numérique ou analogique) et de la qualité du service.
+
+			_RNIS " Réseau Numérique à Intégration de Service "  :  
+				Version numérique du R.T.C, les communications sont découpées dans le temps (multiplexage) et présenté sous forme de canaux (B & D).
+
+			_X 25 " Transpac "  :  
+				Réseau informatique constitué par des commutateurs et des lignes à haut débit. L’information est découpée en paquets dont la taille se négocie lors de l’abonnement (32 à 1024 octets utiles)
+
+			_F.R " Frame Relay ou Relais de Trames "  :  
+				Modernisation de X 25 mais nécessite des supports fiables (fibre optique).
+				Débit 4 et 384 Kbps à 2 Mbps pouvant atteindre 45 Mbps suivant les variantes.
+
+			_A.T.M " Asynchronous Transfert Mode "  :  
+				Réseau à commutation de cellules de 53 octets dont 48 octets utiles. Nécessite des liens en fibres optiques, ce réseau est adapté aux applications intégrant la voix, de la vidéo et des données.
+
+			_SONET / SDH " Synchronous Optical Network / Synchronous Digital Hiérarchy "  :  
+				Sonet pour les Etat Unis et le Canada et SDH pour le reste du monde. Réseau en fibre optique en point à point, en bus, en arbre ou en anneaux.
+				Débit de 155 Mbps à 10 Gbps.
+
+
+
+
+
+
+
+
+
+
+
+			/*****************************************/
+			/*******/ Liste de definitions 2  :  /*******/
+			/*****************************************/
+
+			Protocol  :  un ensemble de regles permettant d'établir une communication.
+
+			Protocol réseau  :  est un protocole de communication qui permet au ordinateur de s'échanger des informations.
+
+			Protocol applicatif  :  est un protocole de communication et en meme temps une application.
+
+			Internet  :  regroupement de réseaux internationaux ( Wan + tcp/ip )
+
+			WEB  :  WAN + INTERNET(TCP/IP) + protocol HTTP + HTML + URL(DNS)
+
+			WEB1  :  static      (unidirectionnel : HTML + CSS )
+
+			WEB2  :  dynamique   (bidirectionnel : HTML + CSS + laguage de programmation)
+
+			WEB3  :  semantique  (le sens des mots : HTML + CSS + laguage de programmation)
+
+			WEB4  :  symbiotique (la possibilité de travailler avec des applications en ligne... : HTML + CSS + laguage de programmation)
+
+			Intranet  :  LAN + protocol HTTP + HTML + URL(DNS)
+
+			DMZ  :  Réseau périphérique pour partager des ressources avec l'exterieur.
+
+			Extranet  :  DMZ + protocol HTTP + HTML + URL(DNS)
+
+			FQDN  :  Nom de domaine Internet completement qualifié (Fully Qualify Domain Name)
+
+			URL  :  protocole de transfere applicatif :  //FQDN
+
+
+
+
+
+
+
+
+
+
+			/**********************************************/
+			/*******/ Equipement d'inteconnexion  :  /*******/
+			/**********************************************/
+
+
+
+			HUB (Host Unit Broadcast, concentrateur)  :  
+				Il travaille au niveau 1 du modèle OSI. 
+				Il est appelé concentrateur en francais, est un equipement permettant d'interconnecter électriquement plusieurs ordinateurs. L'architecture réseau formée represente une étoile avec le hub au milieu et les ordinateurs aux branches.
+				Le HUB repete, diffuse, amplifi toutes les trames qu'il recoit sans traitement supplémentaire. L'inconvénient du HUB est qu'il genere beaucoup de trame (broadcast) en repetant et diffusant à tous ces interfaces réseaux et cela peut saturer ke réseau.
+
+
+
+			BRIDGE (pont)  :  
+				Les ponts travaillent au niveau 2 du modèle OSI.
+				Ils permettent d'interconnecter différentes deux segments de technologies différentes, soit de même technologie, mais physiquement séparés. Son usage est proche de celui d'un commutateur (switch).
+
+
+
+
+			SWITCH (commutateur)  :  
+				Il travaille au niveau 2 du modèle OSI. 
+				Un commutateur réseau, ou switch, est un équipement qui relie plusieurs segments (câbles ou fibres) dans un réseau informatique. Le commutateur repete, amplifi toutes les trames et limite les diffusions en retenant dans un cache les adresses MAC au fur et à mesure que les ordinateurs lui envoie des trames. 
+				Il existe deux modes de transport de trame au sein des réseaux informatiques et de communication, l'autre étant le routage.
+
+				La différence avec le hub, c’est que le switch apprend quels sont les ordinateurs qui sont autour de lui. Ainsi, si il reçoit une trame pour l’ordinateur X, il ne l’envoie qu’au segment de l’ordinateur X et pas aux autres. Il commute (il branche) l’entrée des données vers la sortie où est l’ordinateur X concerné.
+				Les switchs sont capables d’analyser un peu l’information contenue dans la trame, de repérer l’adresse MAC de la destination et d’envoyer la trame vers le bon ordinateur.
+
+
+
+			ROUTEUR (router)  :  
+				Il travaille au niveau 3 du modèle OSI. 
+				périphérique ou logiciel permettant d'acheminer ou d'aiguiller les trames d'un réseau LAN vers un autre LAN.
+				Ils travaillent au niveau de la couche 3 du modèle OSI, et s'occupent de routage des unités de données. Ils permettent d'interconnecter deux réseaux logiques utilisant les mêmes protocoles.
+				C’est ce que l’on fait de mieux pour acheminer les données. Historiquement le routeur est quasiment un ordinateur à part entière. Il est capable de décoder les trames jusqu’à retrouver l’adresse IP et de diriger l’information dans la bonne direction. On peut aussi définir dans les trames le chemin où doit passer la trame grâce à l’adresse réseau, le routeur peut comprendre tout cela... Le fait de définir ou de diriger une trame s’appelle « router » une trame. C’est pour cela qu’on les appelle des routeurs.
+
+
+
+			PASSERELLE  :  
+				il travaille aux niveaux 2, 3, 4, 5, 6, 7 du modèle OSI. 
+				périphérique ou logiciel permettant d'acheminer ou d'aiguiller les trames d'un réseau LAN vers un WAN. La passerelle permet de traduire des technologies ou protocoles vers d'autres.
+
+
+
+			NAT  :  
+				Il travaille au niveau 3 du modèle OSI. 
+				périphérique ou logiciel permettant d'acheminer ou d'aiguiller les trames d'un réseau LAN vers un autre LAN
+
+
+
+			FIREWALL  :  
+				Il travaille au niveau 3 du modèle OSI. 
+				périphérique ou logiciel permettant de sécuriser votre ordinateur en filtrant les trames réseaux entrantes et sortantes, les adresse TCP/IP et les protocoles
+
+
+
+			PROXY  :  
+				il travaille aux niveaux 2, 3, 4, 5, 6, 7 du modèle OSI. 
+				périphérique ou logiciel permettant de sécuriser tout un réseau en filtrant les trames réseaux entrantes et sortantes, les adresse TCP/IP, les protocoles, les URL, les mots clés, les utilisateurs
+
+
+
+			DNS  :  (Domain Name System) service permettant de résoudre des noms FQDN en adresse TCP/IP
+			FQDN  :  (Full Qualify Domain Name) Nom de domaine Internet completement qualifié (Fully Qualify Domain Name)
+			URL  :  (Uniform Ressource Locator) protocole : //FQDN
+			DHCP  :  (Dynamic Host Configuration Protocole) service permettant de configurer les adresses IP automatiquement.
+
+
+
+
+
+
+
+
+
+
+
+			/*****************************************/
+			/*******/ Liste de domaines TLD  :  /*******/
+			/*****************************************/
+
+			TLD génériques (generic TLD ou gTLD)
+				.arpa  :  Zone des paramètres d'adressage et de routage (Address and Routing Parameter Area (ARPA) Domain, anciennement Arpanet)
+				.edu  :  Institutions éducatives approuvées aux Etats-Unis
+				.gov  :  Gouvernement et administration américaine
+				.int  :  Organisations intergouvernementales internationales
+				.mil  :  Armée américaine
+
+			gTLD ouverts à tous (commerciaux)
+				.biz  :  Affaires (business)
+				.com  :  Commerce (Voir note ci-dessous).
+				.info  :  Services d’information
+				.name  :  Individu, par nom de famille et/ou prénom
+				.net  :  Gestionnaires de réseaux
+				.org  :  Organisations à but non commercial
+				.pro  :  Professionnels qualifiés
+
+			TLD commandités (sponsored TLD ou sTLD)
+				.aero  :  Industrie aéronautique
+				.cat  :  Culture et langue catalane
+				.coop  :  Organisations coopératives
+				.jobs  :  Services de ressources humaines
+				.museum  :  Musées
+				.mobi  :  Services Internet pour mobiles (profil XHTML-MP)
+				.travel  :  Industrie du voyage et du tourisme
+
+			Les sTLD réglementés suivant ont été approuvés  :  
+				.tel, commandité par Telnic Ltd., Royaume-Uni, Site du commanditaire
+				.asia Site du commanditaire
+
+
+
+
+
+
+
+
+
+
+
+			/*****************************************************/
+			/*******/ Presentation de TCP/IP v4 et v6  :  /*******/
+			/*****************************************************/
+
+			TCP/IP v4  :  
+				ensemble de plusieurs protocoles (arp, rarp, ip, icmp, igmp, tcp, udp) qui permettent la communication sur internet ou en local.
+
+
+
+			TCP/IP v6  :  
+				ensemble de plusieurs protocoles (andp, ip, icmp, mld, tcp, udp) qui permettent la communication sur internet ou en local.
+
+
+
+
+
+
+
+
+
+
+
+			/*****************************************/
+			/*******/ Adresse MAC, IP et MASQUE  :  /*******/
+			/*****************************************/
+
+			Adresse MAC  :  
+				Une adresse MAC (Media Access Control) est un identifiant physique unique au monde stocké dans la carte réseau. 
+
+
+
+			Adresse IP  :  
+				Les adresses IP sont utilisé comme les numéros de téléphone et permettent d’identifier un hôte TCPIP. 
+				Une adresse IP (avec IP pour Internet Protocol) est le numéro qui identifie chaque hote ( ordinateur, routeur, imprimante) connecté au réseau Internet ou au réseau local.
+
+
+
+			Adresse du MASQUE  :  
+				Le MASQUE de sous réseau sert à séparer adresse RESEAU de adresse HOTE contenu dans l’adresse IP.
+
+
+
+
+
+
+
+
+
+
+
+			/***********************************************************************/
+			/*******/ Liste des protocoles de base dans TCP/IP v4 ou v6  :  /*******/
+			/***********************************************************************/
+
+
+			Liste des protocoles de base dans TCP/IP v4  :  
+				Numéro de port  :  Numéro permettant d'identifier l’application
+				UDP  :  transfère en mode non connecté (poste)
+				TCP  :  transfère en mode connecté (téléphone)
+				IGMP  :  gestion du multicaste
+				ICMP  :  gestion des messages de contrôle
+				IP  :  gestion de l’adressage et du routage
+				ARP  :  résolution des @IP en @MAC
+				RARP  :  résolution des @MAC en @IP
+
+
+				
+			Liste des protocoles de base dans TCP/IP v6  :  
+				Numéro de port  :  Numéro permettant d'identifier l’application
+				UDP  :  transfère en mode non connecté (poste)
+				TCP  :  transfère en mode connecté (téléphone)
+				MLD  :  gestion du multicaste
+				ICMP  :  gestion des messages de contrôle
+				IP  :  gestion de l’adressage et du routage
+				NDP  :  detection des @IP et @MAC
+
+
+
+
+
+
+
+
+
+
+
+			/********************************************/
+			/*******/ Protocoles Applicatifs  :  /*******/
+			/********************************************/
+
+			Protocoles orientés transfert de fichiers  :  
+				FTP (IETF), NFS (Sun Microsystems) et AFS, SMB/CIFS (Microsoft)
+
+
+
+			Protocoles orientés messageries  :  
+				SMTP ( Simple mail transfer protocol ) pour l’envoie le routage de courrier, TCP 25 ;
+				POP ( Post Office Protocol ) pour l’envoie de courrier, TCP 110 ;
+				IMAP ( Internet Message Access Protocol ) pour l’envoie de courrier, TCP 143 ;
+				NNTP (Usenet) et encore X.400 pour la diffusion de news et de forum,  ;
+
+
+
+			Protocoles de type «session distance»  :  
+				Telnet, rlogin, Secure shell (SSH) et des protocoles comme le déport d'affichage  :  X, XDMCP
+
+
+
+			Protocole utilisé pour l'envoi de pages HTML  :  
+				HTTP (Le HyperText Transfer Protocol ) utilisant le port serveur, TCP 80
+				HTTPS (Le HyperText Transfer Protocol Secured) utilisant le port serveur, TCP 443
+
+
+
+			Protocole de résolution de nom de domaine (FQDN)  :  
+				DNS (Domain Name System) pour la résolution d'adresse,
+
+
+
+			Protocole de gestion  :  
+				SNMP (Simple Network Management Protocol) pour la supervision
+
+
+
+			HTTP ( Hyper Text Transfer Protocol )
+				Protocole de transmission de documents hypermédia. Il est utilisé pour transférer des documents hypertextes ou des documents hypermédia entre un serveur et un client web.
+				Ainsi un serveur http est un serveur chargé d'envoyer les pages web (en HTML) à votre ordinateur (le client), lorsque vous lisez une page web.
+
+
+
+			Langage de publication et de balisage HTML ( HyperText Markup Langage )
+				Langage de marquage utilisé pour spécifier la mise en forme de documents.
+				Les pages web sont écrites dans ce format assez simple. Vous pouvez voir le code HTML d'une page dans un des menus de votre navigateur en demandant à voir le code source.
+
+
+
+
+
+
+
+
+
+
+
+			/*********************************/
+			/*******/ Serveur WEB  :  /*******/
+			/*********************************/
+
+			Les serveurs HTTP utilisent le service  :  
+				• Apache HTTP Server de « Apache Software Foundation »
+				• Internet Information Services de Microsoft (Serveur IIS);
+				• Sun Java System Web Server de Sun Microsystems ;
+				• Le serveur Web Zeus de Zeus Technology ;
+				• LAMP (Linux, Apache, MySQL, PHP)
+				• WAMP (Windows, Apache, MySQL, PHP)
+				• MAMP (MAC, Apache, MySQL, PHP)
+				• XAMPP (systemes, Apache, MySQL, PHP, SMTP, JAVA(TOMCAT) )
+				• EseaPHP (Windows, Apache, MySQL, PHP)
+
+
+
+
+
+
+
+
+
+
+
+			/***********************************/
+			/*******/ numero de port  :  /*******/
+			/***********************************/
+			
+			Un port est identifié par un numéro exprimé sur 16 bits. Il existe donc un maximum de 65 535 ports par ordinateur.
+
+			L'attribution des ports est faite par le système d'exploitation, sur demande d'une application. 
+			Cette dernière peut demander que le système d'exploitation lui attribue n'importe quel port disponible. 
+
+			Lorsqu'un logiciel client veut dialoguer avec un logiciel serveur, aussi appelé service, il a besoin de connaître le port écouté par ce dernier. 
+			Les ports utilisés par les services devant être connus par les clients, les principaux types de services utilisent des ports qui sont dits réservés. Par convention, ce sont tous ceux compris entre 0 et 1 0232 inclus.
+			
+			Sous UNIX, ce fichier est directement dans /etc ; 
+			sous Windows, ce fichier "services" est par défaut dans C:\Windows\System32\drivers\etc 
+			
+			Les services les plus utilisés sont :
+
+				80, pour la consultation d'un serveur HTTP par le biais d'un navigateur web
+				443, pour les connexions HTTPS utilisant une surcouche de sécurité de type SSL : HTTPS
+				
+				53, pour la résolution de noms de domaine en adresses IP : DNS
+				67/68, pour DHCP et bootpc
+				
+				20/21, pour l'échange de fichiers via FTP
+				
+				25, pour l'envoi d'un courrier électronique via un serveur dédié SMTP
+				465, pour l'envoi d'un courrier électronique via un serveur dédié SMTP sécurisé en SSL : SMTPS
+				110, pour la récupération de son courrier électronique via POP
+				143, pour la récupération de son courrier électronique via IMAP
+				6667, pour la connexion aux serveurs IRC
+				
+				22, pour la prise de contrôle à distance en shell sécurisé Secure SHell, 
+				22, également utilisé pour l'échange de fichiers sécurisés SFTP
+				23, pour la prise de contrôle à distance en telnet
+				3389, pour la prise de contrôle à distance en RDP
+				
+				123 pour la synchronisation de l'horloge : Network Time Protocol (NTP)
+				
+				389, pour la connexion à un LDAP
+				636, pour l'utilisation d'une connexion à un LDAP sécurisé par une couche SSL/TLS
+				1521, serveur de base de données Oracle Database
+				3306, serveur de base de données MySQL
+				5432, serveur de base de données PostgreSQL
+				
+				500, port utilisé pour le canal d'échange de clés IPsec
+				1723, pour l'utilisation du protocole de VPN PPTP
+
+
+
+
+
+
+
+
+
+
+
+			/*****************************************/
+			/*******/ Liste de Langages  :  /*******/
+			/*****************************************/
+
+			Langage HTML (Hypertext Markup Language)  :  
+				Le HTML est un langage publication et structuration de documents WEB.
+
+			Langage CSS (Cascading Style Sheet : Feuilles de Style en Cascade) :  
+				Le CSS est utilisé pour la mise en page et le design de documents WEB
+
+			Langage XML (eXtensible Markup Language, Langage de balisage étendu) :  
+				XML est un langage de balise destiné à représenter tout type de données pour permettre un échange de donnée entre systèmes d'informations hétérogènes (interopérabilité).
+
+			Langage JAVASCRIPT  :  
+				JavaScript est un langage de scripts orienté objet à prototype utilisé dans les pages web dynamique coté client (navigateur) mais aussi côté serveur.
+
+			Langage C++  :  
+				Le C++ est un langage permettant la programmation procédurale, orientée objet et générique.
+
+			Langage JAVA  :  
+				c'est est un langage orienté objet dont les logiciels doivent fonctionner sur les systèmes d’exploitation tels que UNIX, LINUX, Windows, Mac. Il existe deux types de programmation en Java : les applets (executer par le navigateutr) et les applications (executer par le OS) 
+
+			Langage PHP  :  
+				Le PHP(Hypertext Preprocessor) est un langage orienté objet côté serveur, utilisé pour produire des pages Web dynamiques.
+
+			Langage SQL (Structured Query Language, en français langage de requête structurée) :  
+				S.Q.L. est un langage de requêtes servant à exploiter des bases de données relationnelles. 
+
+			Langage PYTHON  :  
+				c'est est un langage orienté objet, multi-paradigme et multiplateformes.
+
+			Langage ActionScript  :  
+				c'est est un langage script, orienté objet et de prototype au sein d'applications clientes et serveur (Adobe Flash, Adobe Flex).
+
+			Langage PERL  :  
+				c'est est un langage script pour traiter facilement de l'information de type textuel et d'en établir des rapports.
+
+			Langage AJAX (Asynchronous JavaScript and XML) : 
+				AJAX permet de construire des applications Web dynamiques et interactifs sur le poste client. Ajax utilise JavaScript, les CSS, XML, le DOM et l'objet XMLHttpRequest.
+
+			Langage ASP.NET (Active Server Pages) :  
+				ASP est un ensemble de logiciels développés la programmation Web dynamique. Il fonctionne avec IIS ou une version modifiée d'Apache. ASP est composé d'objets accessibles par deux langages script interprétés : le VBScript et le JScript.
+
+			Langage UML  (de l'anglais Unified Modeling Language, en francais Langage de modélisation unifié) :  
+				UML  est un langage de modélisation de logiciel à base de dessin pour concevoir leur programmation orientée objet. 
+
+
+
+
+
+
+
+
+
+
+
+			//********************************************/
+			/*******/ Commande Windows  :  /*******/
+			/********************************************/
+
+
+
+			IPCONFIG  :  Affiche ou rafraîchit la configuration réseau TCP/IP 
+			 
+			ipconfig /? 
+
+			ipconfig /all  
+			Affiche toute la configuration IP de l'ordinateur local.
+
+			ipconfig /renew ["nom de la carte"]  
+			Renouvelle ou prologe la configuration IP allouée par le DHCP.
+
+			ipconfig /release ["nom de la carte"]  
+			Libere et supprime la configuration IP allouée par le DHCP.
+
+			ipconfig /flushdns  
+			Vide et réinitialise le cache de résolution du client DNS.
+
+			ipconfig /displaydns  
+			Affiche le cache de résolution du client DNS.
+
+			ipconfig /registerdns  
+			Actualise tous les baux DHCP et réinscrit les noms DNS. 
+
+
+
+			PING  :  Teste la connexion réseau avec une adresse IP distant
+
+			ping 127.0.0.1
+			ping localhost
+			ping 192.168.1.1
+			ping www.google.fr
+
+
+
+			ARP   :   Résolution des adresses IP en adresses MAC. (ex  :  arp -a ou arp -g)
+			ROUTE   :   Affiche ou modifie la table de routage (ex  :  route print )
+
+
+
+			NsLookUp  :  envoie des requêtes de résolution de [@IP ou FQDN] sur un serveur DNS.
+
+			nslookup [@IP ou FQDN]
+
+			(URL = protocole de trasfere + FQDN)
+			(format du FQDN  :  NomSiteOrdinateur.domaine.tld)
+
+			nslookup 192.168.1.1
+			nslookup ordi1.domaine1.com
+			nslookup www.google.fr
+
+			Si vous ne précisez aucun paramètre pour nslookup, un shell s'ouvrira en attente de requêtes de votre part.
+			
+
+
+
+
+
+
+
+
+			/****************************************************/
+			/*******/ Configuration du réseau F2I  :  /*******/
+			/****************************************************/
+
+			Adresse IP     :  10.X.X.X
+			Masque Reseau  :  255.0.0.0
+			Passerelle     :  10.X.0.1
+			DNS            :  10.X.0.9
+			Proxy IP       :  10.X.0.254
+			Proxy Port     :  3128
+
+			SRV Prog       :  10.0.0.10
+			Compte         :  Formation
+			MDP            :  Azerty1
+
+			Wifi SSID      :  F2I-BX, F2IRDC, F2I2IEME, ...
+			Wifi MDP       :  F2IPUBLIC        
+
+
+
+
+
+
+
+
+
+
+		-->
+
+
+
+
+
+
+
+
+
+
+		<!--
+
+
+
+			PLAN : 
+				Presentation de Internet
+				Presentation des balises HTML
+				Encapsulation et indentation des balises HTML
+				Les espaces ou tabulations ou retours à la ligne en HTML
+				Roles des balises HTML
+				Type des balises HTML en bloc ou en ligne
+				Balises Texte : h1, p, strong, em, br, ...
+				Balise Hypertext : a
+				Balise Image : img
+				Balises Object : audio, video
+				Balises List : dl, ol, ul
+				Balises Tableau : table
+				Balises Forms : form, input, textarea, ...
+				Balises DIV et SPAN
+				Nouvelle balise HTML5 : header, hgroup, nav, section, article, aside, footer
+
+
+
+		-->
+
+
+
+
+
+
+
+
+
+
+
+		<!-- 
+			Commentaire CSS, C++, Javacript, PHP, ASP, Java, ... : 
+			
+					// Commentaire sur une ligne 
+					
+					/* Commentaire sur plusieurs lignes */
+					
+					/* 
+						Commentaire CSS
+						Nom du projet :
+						Description :  
+						Nom de l'auteur : 
+						Date de creation : 
+						Nom du dernier modificateur : 
+						Date de modification : 
+						Version :
+
+					*/
+		-->
+
+
+
+
+
+		<!-- Commentaire HTML :  -->
+		<!-- 
+			Commentaire sur plusieurs lignes ... 
+			Commentaire sur plusieurs lignes ... 
+			Commentaire sur plusieurs lignes ... 
+			Commentaire sur plusieurs lignes ... 
+		-->
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  Les balises HTML à quoi cela sert ? -->
+		
+		Les balises HTML servent à marquer et fournir un traitement pour presenter le contenu d'une page WEB.
+
+
+		
+		<!-- Commentaire :  balise HTML ouvrante et fermante -->
+
+		<balise1> <!-- balise ouvrante--> Lorem ipsum dolor sit amet, </balise1> <!-- balise fermante--> 
+		
+		<balise1> consectetur adipiscing elit. </balise1>
+
+
+
+
+
+
+
+
+
+
+		<balise2>  <!-- balise ouvrante-->
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+		</balise2> <!-- balise fermante-->
+
+		<balise3> 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+		</balise3>
+
+		<balise2> 
+		
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			
+			<balise3> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+			</balise3>
+			
+			<balise4> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+			</balise4>
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			
+		</balise2>
+		
+		
+		Question :
+		
+			<balise2> Lorem ipsum  <balise2>
+
+			<balise3> Lorem ipsum  <balise3/>
+			
+			<balise4> Lorem ipsum  </balise5>
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  balise HTML autofermante (sans contenu ) -->
+
+		<meta >      <!--   Description : meta-informations de presentation et de parametrage -->
+		<link />     <!--   Description : Lien externe, permet d'etablir un lien avec un document externe -->
+		<br />       <!--   Description : Line break ou retour à la ligne -->
+		<img />      <!--   Description : Inline image ou image de contenu -->
+		<input />    <!--   Description : Form input ou champs du formulaire -->
+		<param />    <!--   Description : parametre d'un objet -->
+		<area />     <!--   Description : zone d'image reactive, elle fonctionne avec map -->
+		
+		
+		Question :
+		
+			<meta> Lorem ipsum  </meta >
+			
+			<br > Lorem ipsum  </br >
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  balise HTML ouvrante avec attribut -->
+
+		<balise3 attribut1='valeur1'> consectetur adipiscing elit. </balise3>
+		
+		<balise3 attribut1="valeur1"> consectetur adipiscing elit. </balise3>
+		
+		<balise3  attribut1="valeur1" attribut2='valeur2 valeur3' attribut3="valeur4, valeur5"> 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 		
+		</balise3>
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  balise HTML, priotité  et heritage -->
+
+		<!-- Priorité :  
+												CSS > Balise HTML + attribut
+								 Balise HTML enfant > Balise HTML parent
+						   css + Balise HTML enfant > Balise HTML parent + css
+						   Systeme de priorité CSS : 0, 1, 10, 100, 1000 = addition
+
+		-->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  Les cinq regles HTML5 -->
+		<!-- 
+			1e regle : Les elements vides ne necessitent pas d'etre fermes ou autoferme
+			2e regle : Certaines balises fermantes sont optionnelles
+			3e regle : La casse est variable
+			4e regle : Les guillemets sont facultatifs
+			5e regle : Les commentaires presents dans le code source ne sont pas affiches ni interpretes
+		-->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  Les cinq principales regles XHTML sont de meilleurs pratiques -->
+		<!-- 
+			1e regle : Toutes les balises ouvrantes doit etre fermees
+			2e regle : Toutes les balises doivent etre écrites en minuscules
+			3e regle : Toutes les attributs HTML ou proprietes CSS mentionnees et utilises doivent avoir une valeur
+			4e regle : Toutes les valeurs doivent etre écrites entre apostrophe (quotes) ou guillemets (double quotes)
+			5e regle : Toutes les elements doivent etre correctement imbriques
+		-->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  IMBRICATION de balise HTML -->
+
+		<balise1> texte a <balise2> texte b <balise3> texte c </balise3> texte d </balise2> texte e </balise1> 
+
+
+
+		<!-- Commentaire :  IMBRICATION et INDENTATION -->
+
+		<balise1> <!-- ouverture de la balise1 -->
+			texte a1
+			texte a1
+			texte a1
+			<balise2> <!-- ouverture de la balise2 -->
+			
+				texte b2
+				texte b2
+				texte b2
+				<balise3> <!-- ouverture de la balise3 -->
+					texte c3
+					texte c3
+					texte c3
+				</balise3> <!-- fermeture de la balise3 -->
+				
+				<balise4> <!-- ouverture de la balise3 -->
+					texte c4
+					texte c4
+					texte c4
+				</balise4> <!-- fermeture de la balise3 -->
+				texte d2
+				texte d2
+				texte d2
+				
+			</balise2> <!-- fermeture de la balise2 -->
+			texte e1
+			texte e1
+			texte e1
+		</balise1> <!-- fermeture de la balise1 -->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : erreur d'imbrication -->
+		
+		<balise1> texte a <balise2> texte b <balise3> texte c </balise2> texte d </balise3> texte e </balise1> 
+		
+		
+		
+		<balise1> <!-- ouverture de la balise1 -->
+		
+			texte a1
+			
+			<balise2> <!-- ouverture de la balise2 -->
+			
+				texte b2
+				
+				<balise3> <!-- ouverture de la balise3 -->
+				
+					texte c3
+					
+				</balise2> <!-- fermeture de la balise2 -->
+				
+				texte d2
+				
+			</balise3> <!-- fermeture de la balise3 -->
+				
+			texte e1
+			
+		</balise1> <!-- fermeture de la balise1 -->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :   La balise    <!DOCtype html>   --> 
+		<!-- 
+			Le doctype est aussi appele le DTD (Déclaration de type de document) 
+			Il indique quelles sont les regles HTML utilise dans la page.
+			Il doit etre ecrit en premiere ligne du document HTML.
+			Il existe plusieurs version de doctype et la version html5 : <!DOCtype html>
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <html>   --> 
+		<!-- 
+			Element racine HTML, il indique que le document contient du HTML.
+			Il doit etre ecrit dans les premieres lignes, juste apres le doctype.
+			Cette balise maque le debut du code HTML et sa balise fermante marquera la fin. 
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <head>   --> 
+		<!-- 
+			En-tete du document HTML, le contenu de cette balise n'est pas affiche dans le navigateur ou au visiteur.
+			Il doit etre ecrit dans les premieres lignes entre les balises html.
+			Cette balise permet de fournir une description de la page HTML.
+			Exemple : l'auteur, la langue, le type d'encodage de caractere utilise, ...
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <title>   --> 
+		<!-- 
+			Titre du document HTML, le contenu est affiche dans le navigateur et lors de l'ajout au favoris.
+			Cette balise doit etre ecrit entre les balises head.
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <meta>   --> 
+		<!-- 
+			meta-information, fournit les informations de descriptions de la page HTML.
+			Cette balise doit etre ecrit dans les premieres lignes entre les balises head.
+			Les applications en ligne, les robots d'indexation, les navigateurs peuvent exploiter ces informations.
+			Le contenu de cette balise n'est pas affiche dans le navigateur ou au visiteur.
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <noscript>   --> 
+		<!-- 
+			Texte alternatif au script, le contenu de cette balise s'affiche,
+			si l'utilisateur a désactive l'utilisation de script dans les parametres du navigateur.
+			Cette balise doit etre ecrit entre les balises head.
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <script>   --> 
+		<!-- 
+			Texte script, cette balise permet d'executer du script comme par exemple du JAVASCRIPT,
+			si l'utilisateur a activé l'utilisation de script dans les parametres du navigateur.
+			Tous les navigateurs activent par defaut l'utilisation de script.
+			Cette balise doit etre ecrit entre les balises head ou body.
+			Il est conseillé d'externaliser les scripts.
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <style>   --> 
+		<!-- 
+			Texte CSS, cette balise permet d'appliquer des regles CSS pour mettre en forme la page.
+			Cette balise doit etre ecrit entre les balises head.
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <link>   --> 
+		<!-- 
+			Lien externe, permet d'etablir un lien avec un document externe.
+			Cette balise doit etre ecrit entre les balises head.
+		-->
+
+
+
+
+		<!-- Commentaire :   La balise    <body>   --> 
+		<!-- 
+			Corps du document, conteneur principal de tous les elements qui seront affiches dans le navigateur.
+			Il doit etre ecrit entre les balises html, juste apres la balise de fermeture </head>.
+		-->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  balise HTML et les espaces ou tabulations ou retours à la ligne -->
+
+		<p> 
+			!!! Ligne1 : Espaces :          Je          voudrais           rentrer          dans &nbsp;          ...
+			
+			!!! Ligne2 : Espaces avec un caractere special : &nbsp;&nbsp;&nbsp; Je &nbsp;&nbsp;&nbsp; voudrais ...
+			
+			!!! Ligne3 : Tabulation :			Je			voudrais			rentrer			dans		...
+
+			!!! Ligne4 : Saut de ligne :
+											Je
+											voudrais
+											rentrer <br />
+											dans <br />
+											... <br />
+		</p>
+		
+
+
+
+
+		<!-- Commentaire :  Type de balise HTML   BLOC ou EN LIGNE   -->
+
+		<pre>
+			Les éléments suivants sont définis comme des balises de type BLOC (BLOCK) :
+			Les balises de types BLOC peuvent etre DIMENSIONNER, POSITIONNER et IMBRIQUER d'autres balises
+			de type BLOC, de type EN LIGNE ou de simple caractere (element orphelin).
+			Par defaut elles occupe toute la largeur de l'element parent et la hauteur dépent du contenu. 
+
+				* H1   <!--   Description : Level-one heading ou titre de niveau 1, le plus important -->
+				* H2   <!--   Description : Level-two heading ou titre de niveau 2 -->
+				* H3   <!--   Description : Level-three heading ou titre de niveau 3 -->
+				* H4   <!--   Description : Level-four heading ou titre de niveau 4 -->
+				* H5   <!--   Description : Level-five heading ou titre de niveau 5 -->
+				* H6   <!--   Description : Level-six heading ou titre de niveau 6 -->
+				* P   <!--   Description : Paragraph ou paragraphe -->
+				* DL   <!--   Description : Definition list ou liste de définitions-->
+				* DT   <!--   Description : Definition term ou titre de definition contenu entre les <dl> -->
+				* DD   <!--   Description : Definition description ou description d'un terme contenu entre les <dl> -->
+				* OL   <!--   Description : Ordered list ou liste ordonnée -->
+				* UL   <!--   Description : Unordered list ou liste non-ordonnée -->
+				* LI   <!--   Description : List item ou element de liste contenu entre les <ol> ou <ol> -->
+				* TABLE   <!--   Description : Table ou tableau de donnee -->
+				* TR   <!--   Description : Table row ou ligne dans un tableau -->
+				* THEAD   <!--   Description : Table head ou groupe de cellules d'en tete doit etre ecrit avant tbody -->
+				* TFOOT   <!--   Description : Table foot ou groupe de cellules de pied doit etre ecrit avant tbody -->
+				* TBODY   <!--   Description : Table body ou groupe de cellules de corps -->
+				* FORM   <!--   Description : Interactive form ou declaration de formulaire -->
+				* FIELDSET   <!--   Description : Form control group ou regroupement de balises dans le formulaire -->
+				* ISINDEX   <!--   Description : Input prompt  -->
+				* DIV   <!--   Description : Generic block-level container ou bloc conteneur generique sans semantique -->
+				* MENU   <!--   Description : Menu list  -->
+				* CENTER   <!--   Description : Centered block -->
+				* HR   <!--   Description : Horizontal rule  -->
+				* DIR   <!--   Description : Directory list -->
+				* ADDRESS   <!--   Description : Address ou adresse de contact du webmaster   -->
+				* BLOCKQUOTE   <!--   Description : Block quotation ou bloque de citation -->
+				* FRAMESET   <!--   Description : Frameset  -->
+				* NOFRAMES   <!--   Description : Frames alternate content  -->
+				* PRE   <!--   Description : Preformatted text ou insertion de code preformate -->
+				* MAP   <!--   Description : image reactive, elle fonctionne avec area -->
+				
+				* HEADER   <!--   Description : En-tete du contenu affiche mais peut etre l'en-tete d'un article   -->
+				* HGROUP   <!--   Description : Groupe de titres   -->
+				* NAV   <!--   Description : Navigation, regroupement de liens pour la navigation   -->
+				* ASIDE   <!--   Description : Aparte, contenu independant lie au site : definition, digression, sidebar, complement, ...   -->
+				* MENU   <!--   Description : permet de declarrer un menu ...   -->
+				* MAIN   <!--   Description : Corps du document ...   -->
+				* SECTION   <!--   Description : Section, regroupement de contenu   -->
+				* ARTICLE   <!--   Description : Article, portion de contenu de press, fiche, reponse, commentaire   -->
+				* FOOTER   <!--   Description : Pied page du contenu affiche mais peut etre le pied d'un article   -->
+				
+				* NOSCRIPT   <!--   Description : Alternate script content ou texte alternatif au script -->
+
+
+			Les éléments suivants peuvent être utilisés soit comme éléments de niveau BLOC ou d' éléments en LIGNE . 
+
+				* SCRIPT   <!--   Description : Client-side script ou introduction de script-->
+				* IFRAME   <!--   Description : Inline frame ou cadre affichant un page externe -->
+				* OBJECT   <!--   Description : Object ou objet -->
+				* APPLET   <!--   Description : Java applet  -->
+
+				
+		</pre>
+		
+		
+		
+		<pre>
+			Les éléments suivants sont définis comme des balises de type EN LIGNE :
+			Les balises de types EN LIGNE ne peuvent pas etre DIMENSIONNER, ou POSITIONNER ou IMBRIQUER dans des balises de type BLOC. 
+			Mais elles peuvent IMBRIQUER des balises de type EN LIGNE ou de simple caractere (element orphelin).
+			 
+				* A   <!--   Description : Anchor ou lien et ancre hypertext permet de naviguer vers un autre page -->
+				* LINK   <!--   Description : Lien externe, permet d'etablir un lien avec un document externe -->
+				* BR   <!--   Description : Line break ou retour à la ligne -->
+				* IMG   <!--   Description : Inline image ou image de contenu -->
+				* STRONG   <!--   Description : Strong emphasis ou mise en exergue important -->
+				* EM   <!--   Description : Emphasis ou mise en exergue generique -->
+				* CAPTION   <!--   Description : legende d'un tableau de donnee  -->
+				* LEGEND   <!--   Description : legende d un groupe fieldset du formulaire  -->
+				* LABEL   <!--   Description : Form field label ou etiquette -->
+				* INPUT   <!--   Description : Form input ou champs du formulaire -->
+				* BUTTON   <!--   Description : Button ou bouton de formulaire -->
+				* SELECT   <!--   Description : Option selector ou liste deroulante -->
+				* OPTION   <!--   Description : Option ou liste d'element contenu dans un select -->
+				* OPTGROUP   <!--   Description : Option group ou regroupement d'option contenu dans un select -->
+				* TEXTAREA   <!--   Description : Multi-line text input ou champs de texte multiple -->
+				* SPAN   <!--   Description : Generic inline container ou conteneur en ligne generique sans semantique -->
+				* FONT   <!--   Description : Font change  -->
+				* BASEFONT   <!--   Description : Base font change  -->
+				* U   <!--   Description : Underlined text  -->
+				* B   <!--   Description : Bold text ou mise ne gras -->
+				* I   <!--   Description : Italic text ou mise en italique -->
+				* Q   <!--   Description : Short quotation ou courte citation en ligne -->
+				* S   <!--   Description : Strike-through text  -->
+				* BIG   <!--   Description : Large text ou agrandissement du texte -->
+				* DEL   <!--   Description : Deleted text ou texte supprime  -->
+				* INS   <!--   Description : Inserted text ou texte insere  -->
+				* SUB   <!--   Description : Subscript ou mise en indice -->
+				* SUP   <!--   Description : Superscript ou mise en exposant -->
+				* VAR   <!--   Description : Variable ou affichage une variable de code informatique -->
+				* DFN   <!--   Description : Defined term ou definition de terme -->
+				* TT   <!--   Description : Teletype text ou texte a chasse fixe  -->
+				* KBD   <!--   Description : Text to be input ou entree au clavier -->
+				* BDO   <!--   Description : BiDi override ou sens de lecture -->
+				* CODE   <!--   Description : Computer code ou insersion de code informatique -->
+				* CITE   <!--   Description : Citation ou citation en ligne -->
+				* SAMP   <!--   Description : Sample output ou affichage en sortie de code informatique -->
+				* SMALL   <!--   Description : Small text ou reduction du texte -->
+				* STRIKE   <!--   Description : Strike-through text  -->
+				* ACRONYM   <!--   Description : Acronym ou acronyme -->
+				* ABBR   <!--   Description : Abbreviation ou abreviation -->
+				* AREA   <!--   Description : zone d'image reactive, elle fonctionne avec map -->
+				* PARAM  <!--   Description : parametre d'un objet -->
+				* TH   <!--   Description : Table header cell ou cellule d'en-tete (titre) de tableau -->
+				* TD   <!--   Description : Table data cell ou cellule de donnee de tableau -->
+
+
+		</pre>
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  Roles des balises HTML  -->
+
+		<pre>
+			Balises Structure :
+				doctype, html, head, title, body
+				
+			Balise Metainformation :
+				meta
+				
+			Balise Link :
+				link
+			
+			Balise Base :
+				base
+			
+			Balises Intrinsic Events :
+				Attributs d'événement
+			
+			Balises Scripting :
+				Éléments script et noscript
+			
+			Balises Style Sheet :
+				Élément style
+			
+			Balises Style Attribute :
+				Attribut style
+			
+			Balises de structure HTML5 :
+				header, hgroup, nav, menu, aside, main, section, article, footer
+				
+			Balises Text :
+				h1, h2, h3, h4, h5, h6, 
+				p, 
+				strong, b, big, 
+				em, i, blockquote, cite, q, 
+				div, 
+				span, 
+				br, 
+				hr,
+				pre, kbd,
+				abbr, 
+				address,
+				var, code, dfn, samp,
+				small, sub, sup, tt
+			
+			Balise Hypertext :
+				a
+			
+			Balise a :
+				Attribut target
+			
+			Balise Image :
+				img
+			
+			Balises Object :
+				object, param, embed, 
+				audio, video,
+			
+			Balises List :
+				dl, dt, dd, ol, ul, li,
+			
+			Balises Basic Tables :
+				table, caption, tr, th, thead, tbody, tfoot
+				td, 
+			
+			Balises Forms :
+				form, 
+				fieldset, 
+				legend, label, 
+				input, button, select, optgroup, option, textarea
+
+		</pre>
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		<!-- Commentaire :  Presentation des balises HTML  -->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Balises Texte -->
+
+			Balises Texte :
+			
+				<h1> TEXTE : Titre </h1> <!-- Level-one heading ou titre de niveau 1, le plus important -->
+				<h2> TEXTE : Titre </h2> <!-- Level-two heading ou titre de niveau 2 -->
+				<h3> TEXTE : Titre </h3> <!-- Level-three heading ou titre de niveau 3 -->
+				<h4> TEXTE : Titre </h4> <!-- Level-four heading ou titre de niveau 4 -->
+				<h5> TEXTE : Titre </h5> <!-- Level-five heading ou titre de niveau 5 -->
+				<h6> TEXTE : Titre </h6> <!-- Level-six heading ou titre de niveau 6 -->
+				<p> TEXTE : Paragraphe </p> <!-- Paragraph ou paragraphe -->
+				<p> <strong> TEXTE : en gras </strong> Paragraphe ... </p><!-- Strong emphasis ou mise ne exergue important -->
+				<p> <em> TEXTE : en italique </em> Paragraphe ... </p> <!-- Emphasis ou mise ne exergue generique -->
+				<p> <u> TEXTE : souligné </u> Paragraphe ... </p> <!-- Balise deconseillée par le W3C (à remplacer par du CSS) -->
+				<br /> <!-- Line break ou retour à la ligne -->
+				<div> <p>Texte </p> </div> <!-- Generic block-level container ou bloc conteneur generique sans semantique -->
+				<div> <span> Texte </span> </div> <!-- Generic inline container ou conteneur en ligne generique sans semantique -->
+				
+				<p>
+					<font size="5" >    <!-- Balise deconseillée par le W3C (à remplacer par du CSS) -->
+						TEXTE : de taille 7 de couleur #7777FF et de font vivaldi ou arial ou serif 
+					</font>    <!-- fermeture de la balise font -->
+
+					<font color="#7777FF" face="coca, vivaldi, arial, serif">    <!-- Balise deconseillée par le W3C (à remplacer par du CSS) -->
+						TEXTE : de taille 7 de couleur #7777FF et de font vivaldi ou arial ou serif 
+					</font>    <!-- fermeture de la balise font -->
+
+					<font size="7" color="#7777FF" face="coca, vivaldi, arial, serif">    <!-- Balise deconseillée par le W3C (à remplacer par du CSS) -->
+						TEXTE : de taille 7 de couleur #7777FF et de font vivaldi ou arial ou serif 
+					</font>    <!-- fermeture de la balise font -->
+				</p>
+
+
+
+
+
+
+
+
+
+
+		<!-- A : Balise Hypertext Anchor -->
+
+			<h2>Balise Hypertext : </h2>
+			
+				<a> Lien Externet (chemin absolu) </a> 
+				
+				<a href="http://www.google.fr"> TEXTE : Lien Hypertext </a> 
+				<a href='ftp://www.domaine1.fr'> TEXTE : Lien Hypertext </a> 
+				<a href="ssh://www.domaine1.fr"> TEXTE : Lien Hypertext </a> 
+				
+				
+				
+				<a> Lien interne (chemin relatif) </a> 
+				
+				<a href="./page01.html"> TEXTE : Lien Hypertext </a> 
+				<a href="../page02.html"> TEXTE : Lien Hypertext </a> 
+				<a href="./dossier11/page03.html"> TEXTE : Lien Hypertext </a> 
+				<a href="../dossier22/page04.html"> TEXTE : Lien Hypertext </a> 
+		
+				
+				
+				<a> Lien vers des ressources </a> 
+				
+				<a href="../document/fichier1.pdf"> TEXTE : Lien Hypertext </a> 
+				<a href="../document/fichier2.doc"> TEXTE : Lien Hypertext </a> 
+				<a href="../document/fichier3.jpg"> TEXTE : Lien Hypertext </a> 
+				<a href="../document/fichier3.png"> TEXTE : Lien Hypertext </a> 
+				<a href="../document/fichier3.gif"> TEXTE : Lien Hypertext </a> 
+				<a href="../document/fichier4.mp3"> TEXTE : Lien Hypertext </a> 
+				<a href="../document/fichier5.mp4"> TEXTE : Lien Hypertext </a> 
+				<a href="../image/fichier3.jpg"> TEXTE : Lien Hypertext </a> 
+				
+				<a href="http://www.domaine1.fr/document/fichier1.pdf"> TEXTE : Lien Hypertext </a> 
+				<a href="http://www.domaine1.fr/document/fichier2.doc"> TEXTE : Lien Hypertext </a> 
+				<a href="http://www.domaine1.fr/document/fichier3.jpg"> TEXTE : Lien Hypertext </a> 
+				<a href="http://www.domaine1.fr/document/fichier3.png"> TEXTE : Lien Hypertext </a> 
+				<a href="http://www.domaine1.fr/document/fichier3.gif"> TEXTE : Lien Hypertext </a> 
+				<a href="https://www.domaine1.fr/document/fichier4.mp3"> TEXTE : Lien Hypertext </a> 
+				<a href="https://www.domaine1.fr/document/fichier5.mp4"> TEXTE : Lien Hypertext </a> 
+				<a href="https://www.domaine1.fr/image/fichier3.jpg"> TEXTE : Lien Hypertext </a> 
+				
+				<a href="ftp://www.domaine2.fr/video/fichier6.mp4"> TEXTE : Lien de téléchargement avec FTP </a> 
+				
+				
+				
+				<a> Lien Ancre </a> 
+				
+				<a href="#MotCle1"> TEXTE : Lien Hypertext </a> 
+				....
+				<p name="MotCle1" id="MotCle1"> CIBLE </p> 
+				
+				
+				
+				
+				
+				<a href="http://www.domaine1.fr/dossier/page02.html#mot_cle2"> TEXTE : Lien Hypertext </a> 
+				...
+				<div name="mot_cle2" id="mot_cle2"> TEXTE : Lien Hypertext </div> 
+			
+			
+			
+			Balises Target :
+				<a target="_blank" href="http://www.google.fr"> TEXTE : Lien Hypertext dans un nouvel onglet</a> 
+				<a target="_blank" href="./dossier/page01.html"> TEXTE : Lien Hypertext dans un nouvel onglet</a> 
+
+
+
+
+
+
+
+
+
+
+		<!-- IMG : Balise Image -->
+
+			Balise Image :
+				<img src="./dossier/fichier0.jpg" />
+				<img src="./dossier/fichier1.png" alt="description de l'image" /> 
+				<img src="./dossier/fichier1.gif" alt="description de l'image" title="description de l'image" /> 
+				<img src="./dossier/fichier2.jpg" alt="description de l'image" width="50%" /> 
+				<img src="./dossier/fichier2.jpg" alt="description de l'image" height="50%" /> 
+				<img src="./dossier/fichier3.png" alt="description de l'image" width="200%" height="50%" /> 
+				<img src="./dossier/fichier4.gif" alt="description de l'image" width="70px" /> 
+				<img src="./dossier/fichier4.png" alt="description de l'image" width="100px" height="100px" /> 
+				<img src="http://www.domaine1.fr/dossier/image03.gif" alt="description de l'image" width="100px" height="100px" /> 
+				
+				<a href="http://www.google.fr"> 
+					<img src="./dossier/fichier2.jpg" alt="description de l'image" width="50%" border='0px'/> 
+				</a>
+
+
+
+
+
+
+
+
+
+
+		<!-- AUDIO : Balises object multimedia -->
+
+			Balises object multimedia :
+
+			1er ecriture (non conseillé) :
+			
+				<audio controls  autoplay loop muted preload="auto" src="./dossier/fichier1.ogg" type="audio/ogg">
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 audio !
+				</audio> 
+			
+				<audio controls  autoplay loop muted preload="auto" src="./dossier/fichier1.mp3" type="audio/mpeg">
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 audio !
+				</audio> 
+
+				
+				
+			2e ecriture ( conseillé) :
+			
+				<audio controls autoplay loop muted preload="auto" >
+					<source src="./dossier/fichier1.wav" type="audio/wav" />
+					<source src="./dossier/fichier1.ogg" type="audio/ogg" />
+					<source src="./dossier/fichier1.mp3" type="audio/mpeg" />
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 audio !
+				</audio> 
+				
+				<audio controls autoplay loop muted preload="auto" >
+					<source src="./dossier/fichier1.mp3" type="audio/mpeg" />
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 audio !
+				</audio> 
+				
+
+
+
+
+
+
+
+
+
+
+		<!-- VIDEO : Balises object multimedia -->
+
+			Balises object multimedia :
+
+			1er ecriture (non conseillé) :
+			
+				<video controls width="320px" height="240px" src="./dossier/fichier1.mp4" type="video/mp4">
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 vidéo !
+				</video> 
+			
+				<video controls width="320px" height="240px" src="./dossier/fichier1.ogv" type="video/ogg">
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 vidéo !
+				</video> 
+
+				
+				
+			2e ecriture ( conseillé) :
+			
+				<video controls width="320px" height="240px" autoplay loop muted preload="auto" poster="./images/w3html5.gif">
+					<source src="./dossier/fichier1.webm" type="video/webm" />
+					<source src="./dossier/fichier1.ogv" type="video/ogg" />
+					<source src="./dossier/fichier1.mp4" type="video/mp4" />
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 vidéo !
+				</video>
+			
+				<video controls width="320px" height="240px" autoplay loop muted preload="auto" poster="./images/w3html5.gif">
+					<source src="./dossier/fichier1.mp4" type="video/mp4" />
+					Message d'erreur : Votre navigateur ne supporte pas la balise HTML 5 vidéo !
+				</video>
+				
+
+
+
+
+
+
+
+
+
+
+		<!-- VIDEO : Balises video pour Youtube -->
+
+			<iframe 
+				id="ytplayer" 
+				type="text/html" 
+				width="640" height="390"
+				frameborder="0"
+				allowfullscreen
+				src="http://www.youtube.com/embed/A12c1UVf-EF"
+			/>
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Balises list -->
+
+
+			Balises list :
+
+
+		<!-- Commentaire : Liste de definition -->
+		
+		<!-- DL : Création de la liste de definition -->
+		<!-- DT : Terme a definir -->
+		<!-- DD : données de la definition -->
+
+			<dl>
+				<dt>TEXTE : terme1</dt>
+				<dd>TEXTE : definition1</dd>
+				
+				<dt>TEXTE : terme2</dt>
+				<dd>TEXTE : definition2</dd>
+				
+				<dt>TEXTE : terme3</dt>
+				<dd>TEXTE : definition3</dd>
+			</dl> 
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Liste non-ordonnée (Unordered list)-->
+		
+		<!-- UL : Création de la Unordered list ou liste non-ordonnée -->
+		<!-- LI : List item ou element de liste contenu entre les <ul> ou <ol> -->
+
+				<ul>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ul> 
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Liste ordonnée -->
+		
+		<!-- OL : Création de la Ordered list ou liste ordonnée -->
+		<!-- LI : List item ou element de liste contenu entre les <ol> ou <ol> -->
+
+				<ol>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ol> 
+
+
+
+
+
+
+
+
+
+
+		<!-- start : Liste ordonnée commencant à 20 -->
+
+				<ol start="20">
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ol> 
+
+
+
+
+
+
+
+
+
+
+		<!-- type : Liste ordonnée en nombre romain -->
+
+				<!-- type="1" ou "i"  ou "I" ou "a"  ou "A" -->
+				
+				<ol type="i">
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ol> 
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Liste ordonnée alphabetique -->
+
+				<ol type="a" start="6">
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ol> 
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Liste et sous liste -->
+
+			<ul>
+				<li>element</li>
+				<li>element</li>
+				<ol type="a" start='3'>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ol> 
+				<li>element</li>
+				<li>element</li>
+				<ul >
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ul> 
+				<li>element</li>
+				<li>element</li>
+			</ul> 
+
+
+			<ol>
+				<li>element</li>
+				<li>element</li>
+				<ol type="I" start='5'>
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ol> 
+				<li>element</li>
+				<li>element</li>
+				<ul >
+					<li>element</li>
+					<li>element</li>
+					<li>element</li>
+				</ul> 
+				<li>element</li>
+				<li>element</li>
+			</ol> 
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : Balise tableau -->
+
+		<!-- TABLE : Création du tableau -->
+		<!-- TR : Table row ou ligne dans un tableau -->
+		<!-- TD : Table data cell ou cellule de donnee de tableau -->
+		
+		<!-- TH : Table header cell ou cellule de donnee pour un titre -->
+
+				Balises Basic Tables :
+				<table>
+					<tr><td>Titre1</td></tr>
+					<tr><td>Donnée</td><td>Donnée</td></tr>
+					<tr><td>Donnée</td><td>Donnée</td><td>Donnée</td></tr>
+				</table> 
+				
+				
+				
+				
+				<table>
+					<tr><th>Titre1</th><th>Titre2</th><th>Titre3</th></tr>
+					<tr><td>Donnée</td><td>Donnée</td><td>Donnée</td></tr>
+					<tr><td>Donnée</td><td>Donnée</td><td>Donnée</td></tr>
+					<tr><td>Donnée</td><td>Donnée</td><td>Donnée</td></tr>
+				</table> 
+
+				
+				
+				
+				<table>
+					<tr>
+						<th>Titre1</th>
+						<th>Titre2</th>
+						<th>Titre3</th>
+					</tr>
+					<tr>
+						<td>element1</td>
+						<td>element2</td>
+						<td>element3</td>
+					</tr>
+					<tr>
+						<td>element1</td>
+						<td>element2</td>
+						<td>element3</td>
+					</tr>
+				</table> 			
+
+
+
+				<table>
+					<tr><th>Titre1</th><th>Titre2</th></tr>
+					<tr>
+						<td>element1</td>
+						<td>element2</td>
+					</tr>
+					<tr>
+						<td>
+							element3
+						</td>
+						<td>
+							element4
+						</td>
+					</tr>
+					<tr><td>element5</td><td>element6</td></tr>
+					<tr><td>element7</td><td>element8</td></tr>
+				</table> 			
+
+
+
+
+
+
+
+
+
+
+		<!-- caption : Balise tableau avec legende -->
+
+				<table border="1px" bgcolor='red' width='200px' height='200px' align='center'>
+				
+					<caption> Ledende du tableau </caption>
+					
+					<tr border="2px" bgcolor='white' width='50px' height='50px' align='center'>
+					
+						<th border="3px" bgcolor='blue' width='10px' height='10px' align='center'>
+							Titre
+						</th>
+						<th border="3px" bgcolor='green' width='10px' height='10px' align='center'>
+							Titre
+						</th>
+
+					</tr>
+					
+					<tr><td width='90px' align='left'>element</td><td>element</td></tr>
+					<tr><td width='100px' align='right'>element</td><td>element</td></tr>
+					<tr><td align='center'>element</td><td>element</td></tr>
+				</table> 			
+
+
+
+
+
+
+
+
+
+
+		<!-- thead, tbody, tfoot : Balise tableau avec tete, pied, corps -->
+
+				<table>
+					<thead>
+						<caption> Titre du tableau </caption>
+						<tr><th>Titre</th><th>Titre</th></tr>
+					</thead>
+					<tfoot>
+						<tr><td>information</td><td>information</td></tr>
+					</tfoot>
+					<tbody>
+						<tr><td>element</td><td>element</td></tr>
+						<tr><td>element</td><td>element</td></tr>
+						<tr><td>element</td><td>element</td></tr>
+					</tbody>
+				</table> 
+
+
+
+
+
+
+
+
+
+
+		<!-- colspan, rowspan : Balise tableau avec fusion de cellules -->
+		<!-- colspan : fusionne plusieurs cellules sur différentes colonnes  -->
+		<!-- rowspan : fusionne plusieurs cellules sur différentes lignes  -->
+
+				<table border="1px">
+					<caption> Titre du tableau </caption>
+					<tr><th>Titre</th><th>Titre</th></tr>
+					<tr><td>element</td><td>element</td></tr>
+					<tr><td colspan='2'>element</td></tr>
+					<tr><td>element</td><td>element</td></tr>
+					<tr><td rowspan='3'>element</td></tr>
+					<tr><td>element</td></tr>
+					<tr><td>element</td></tr>
+					<tr><td>element</td><td>element</td></tr>
+				</table>
+				
+				<!-- ou -->
+				
+				<table>
+					<thead>
+						<caption> Titre du tableau </caption>
+						<tr><th>Titre</th><th>Titre</th></tr>
+					</thead>
+					<tfoot>
+						<tr><td>information</td><td>information</td></tr>
+					</tfoot>
+					<tbody>
+						<tr><td>element</td><td>element</td></tr>
+						<tr><td colspan='2'>element</td></tr>
+						<tr><td>element</td><td>element</td></tr>
+						<tr><td rowspan='3'>element</td></tr>
+						<tr><td>element</td></tr>
+						<tr><td>element</td></tr>
+						<tr><td>element</td><td>element</td></tr>
+					</tbody>
+				</table> 
+				
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : formulaire 1 -->
+
+			Balises Forms :
+			
+			<!-- FORM : Interactive form ou declaration de formulaire -->
+			<!-- INPUT : Form input ou champs d'entrée du formulaire -->
+			<!-- SELECT :  Option selector ou liste deroulante -->
+			<!-- TEXTAREA :  Multi-line text input ou champs de texte multiple -->
+			
+			
+				<form >
+					<label> Login : </label> 
+					<input type="text"     value='Text par défaut '/>    
+					<br/>
+					
+					<label> Mot de passe : </label> 
+					<input type="password" placeholder='Text par défaut'/>   
+					<br />
+					
+					<input type="submit" value="Envoyer" /> 
+					<input type="reset"  value="Réinitialisez" /> 
+				</form>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		<!-- Commentaire : formulaire 3 -->
+			
+				<form method="get" action="#URL#" enctype="multipart/form-data" >
+					<label for="mot1" > Login : </label> 
+					<input id="mot1"     name="idLogin"   type="text"     placeholder='Text par défaut' size="30" maxlength="40" minlength="2"/>   
+					<br/>
+					
+					<label for="idPasse1" > Mot de passe : </label> 
+					<input id="idPasse1" name="idPasse1"  type="password" placeholder='Text par défaut' size="30" maxlength="40" minlength="2"/>   
+					<br />
+					
+					<input type="submit" value="Envoyer" /> 
+					<input type="reset"  value="Réinitialisez" /> 
+				</form>
+				
+				
+				
+				<!-- method="get"  : Avec la méthode GET, les données du formulaire seront encodées dans une URL. Elle n'est pas limitée à 255 caractères.-->
+				<!-- method="post" : Avec la méthode POST, les données du formulaire seront envoyées vers un fichier dynamique (PHP, ASP, JAVA, ...) -->
+				
+				<!-- action="#URL#" : URL de destination et de récupération des données-->
+				
+				<!-- enctype : L'attribut enctype spécifie comment les form-data doivent être codés lors de la présentation sur le serveur. -->
+				<!-- enctype="text/plain" : Les espaces sont convertis en symboles "+", mais pas les caractères spéciaux -->
+				<!-- enctype="application/x-www-form-urlencoded" : (Par défaut) Les espaces sont convertis en "+" symboles et caractères spéciaux sont converties en valeurs ASCII HEX)-->
+				<!-- enctype="multipart/form-data" : Cette valeur est nécessaire lorsque vous charger des fichiers <input type='file' /> -->
+				
+				<!-- <form method="get" action="http://www.domaine2.fr/fic.php" enctype="text/plain"> -->
+				<!-- <form method="get" action="http://www.domaine2.fr/fic.php" enctype="application/x-www-form-urlencoded"> -->
+				<!-- <form method="get" action="http://www.domaine2.fr/fic.php" enctype="multipart/form-data"> -->
+
+
+
+
+
+
+
+
+				
+				<!--
+					EXPRESSION RATIONNELLE ou RÉGULIÈRE avec l'attribut PATTERN : 
+
+					Appelé au expression rationnelle ou expression régulière (regular expression en anglais) 
+					C'est une chaîne de caractères qui décrit les caractères possibles selon une syntaxe précise. 
+					Par exemple : cela peut permettre d'obliger l'utilisateur à remplir un champs qu'avec des chiffres ou lettres.
+
+
+
+					Caractères spéciaux utilisables pour les expressions rationnelles :
+
+
+
+					Résumé 
+					-------------------------- 
+
+					Échappement               :   \
+
+					Parenthèses et crochets   :   (), (?:), (?=), []
+
+					Quantificateurs           :   *, +, ?, {n}, {min,}, {min,max}
+
+					Ancres et séquences       :   ^, $, \ToutMétacaractère
+
+					Alternative	              :   |
+
+
+
+					Caractere	\   :   
+						Un backslash précédant un caractère marque le caractère suivant comme un caractère spécial, un littéral, une référence arrière ou une évasion octal.
+						
+						Cela indique que le caractère qui suit doit être interprété littéralement (et non pas comme un caractère spécial). 
+
+						Lorsque ce caractère d'échappement est suivi d'un caractère non identifié comme caractère d'échappement, correspond au caractère lui-même
+
+						Ainsi, le motif /a*/ utilise le caractère spécial '*' pour correspondre à 0 ou plusieurs 'a'. Le motif /a\*/, au contraire, rend '*' non-spécial pour correspondre aux chaînes de caractères qui comportent la lettre a et une astérisque, comme 'a*'.
+
+						Il ne faut pas oublier d'échapper le caractère '\' car lui-même est un caractère d'échappement dans les chaînes de caractères. 
+						
+						Pour trouver des correspondances à l'un de ces caractères spéciaux, vous devez avant tout le faire précéder d'un caractère d'échappement, en l'occurrence une barre oblique inverse (\). Par exemple, pour rechercher le caractère "+" littéral, vous pouvez utiliser l'expression "\+". 
+						
+						\\   :   Caractère \
+						\/   :   Caractère /
+						\^   :   Caractère ^
+						\$   :   Caractère $
+						\*   :   Caractère *
+						\+   :   Caractère +
+						\?   :   Caractère ?
+						\.   :   Caractère .
+						\|   :   Caractère |
+						\{   :   Caractère {
+						\{   :   Caractère }
+						\(   :   Caractère (
+						\)   :   Caractère )
+						\[   :   Caractère [
+						\]   :   Caractère ]
+
+
+
+					Caractere	/   :   
+						Une barre oblique ou slash précédant un caractère non spécial indique que le caractère qui suit est spécial.
+						C'est à dire que le caractère suivant ne doit pas être interprété directement. 
+						
+						Il peut marquer le début ou la fin d'un modèle d'expression régulière littérale dans JavaScript ou JScript... 
+						
+						Après le deuxième caractère "/", les indicateurs à un seul caractère peuvent être ajoutés pour spécifier le comportement de recherche. 
+
+
+
+					Caractere	^  :   
+						Correspond au début la séquence.
+						C'est à dire le début d’une chaîne de caractères.
+						
+						Ainsi, /^B/ ne correspond pas au 'B' de "un B", 
+						mais correspond au 'B' de "Berceau".
+
+
+
+					Caractere	$   :   
+						Correspond à la fin de la séquence.
+						C'est à dire la fin d’une chaîne de caractères.
+						
+						Ainsi, /t$/ ne correspond pas au 't' de "printemps", mais correspond au 't' de "aliment".
+
+
+
+					Caractere	*   :   
+						Correspond au caractère précédent qui est répété 0 ou plusieurs fois. 
+						C'est équivalent à {0,}.
+						
+						Ainsi, /bo*/ correspond à 'boo' dans "Un booléen" et à 'b' dans "Un bateau bleu", mais ne correspond à rien dans "Ce matin".
+
+
+
+					Caractere	+   :   
+						Correspond au caractère précédent qui est répété une ou plusieurs fois. 
+						C'est équivalent à {1,}.
+						
+						Ainsi, /a+/ correspond au 'a' dans "maison" et à tous les 'a' dans "maaaaaaison".
+
+
+
+					Caractere	?   :   
+						Correspond au caractère précédent qui est présent une fois ou pas du tout. 
+						C'est équivalent à {0,1}.
+						
+						Ainsi, /e?le?/ correspond au l, el, le et ele 
+						Donc au 'el' dans "gel" et au 'le' dans "angle" mais aussi au 'l' dans "Oslo".
+						S'il est utilisé immédiatement après l'un des quantificateurs : *, +, ?, ou {}, il rend le quantificateur moins « gourmand ».
+						Le comportement par défaut, « gourmand », permettant de faire correspondre le plus de caractères possible.
+						Par exemple /\d+/ utilisée avec "123abc" fait correspondre "123". Utiliser /\d+?/ à la même chaîne de caractères fait correspondre "1". 
+						Autre exemple, dans la chaîne "oooo", 'o+? correspond à un seul "o", tandis que 'o+' correspond à tous les 'o de.
+
+
+
+					Caractere	.   :   
+						(Le point) correspond à n'importe quel caractère unique et visibles ou blancs sauf un caractère de saut de ligne \n
+						Pour correspondre à ne importe quel caractère y compris le \n , utiliser un modèle comme [\s \S] .
+						
+						Ainsi, /.n/ correspond à  'un' et 'en' dans "Un baobab nain en cours de  croissance" mais pas à 'nain'.
+
+
+
+					Caractere	( x )   :   
+					Caractere	( TexteOuCaractere1 )   :   
+						C'est un délimiteurs de groupe (avec capture).
+						Correspond à une evaluation de TexteOuCaractere1 et garde la correspondance en mémoire. Elle capture la sous-expression mise en correspondance et lui assigne un nombre ordinal de base un. 
+						Les parenthèses permettent de capturer l'expression.
+						
+						Ainsi, les '(toto)' et '(truc)', dans le motif /(toto) (truc) \1 \2/ correspondent et gardent en mémoire les deux premiers mots de la chaîne de caractère "toto truc toto truc". Les \1 et \2 du motif correspondent aux deux derniers mots de la chaîne.
+
+
+
+						Caractere	x|y   :   
+					Caractere	TexteOuCaractere1|TexteOuCaractere2   :  
+						Correspond à TexteOuCaractere1 ou TexteOuCaractere12.
+
+						Ainsi, /vert|rouge/ correspond à 'vert' dans "feu vert" et à 'rouge' dans "feu rouge".
+
+
+
+					Caractere	TexteOuCaractere1{N}   :   
+						N doit obligatoirement être un entier positif.
+						Correspond pour exactement N occurences du TexteOuCaractere1 précédent. 
+
+						Ainsi, /a{2}/ ne correspond pas au 'a' de "Mozilla" mais correspond à tous les 'a' de "Mozilaa" et aux deux premiers 'a' de "Mozillaaa".
+
+
+
+					Caractere	TexteOuCaractere1{N,M}   :   
+						N et M sont des entiers positifs.
+						Cela correspond à au moins N occurences du TexteOuCaractere1 précédent et à au plus M occurrences. 
+						Lorsque M n'est pas mentionné TexteOuCaractere1{N,}, la valeur par défaut correspondante sera l'infini.
+
+						Ainsi, /a{1,3}/ ne correspond à rien dans "Mozill", au 'a' de "Mozilla", au deux premiers 'a' de "Mozilla" et au trois premiers 'a' de "Mozillaaaaa". Pour ce dernier exemple, on doit noter que le correspondance ne se fait que sur "aaa" bien qu'il y ait plus de 'a' dans la chaîne de caractères.
+
+
+					Caractere	[xyz]   :   
+					Caractere	[ groupe_caractères ]    :   
+					Caractere	[Caractere1Caractere2Caractere3]   :   
+						Un ensemble de caractère ou un jeu de caractères. 
+						Ce type de motif correspond pour n'importe quel caractètre présent entre les crochets, y compris les séquences d'échappement. Les caractères spéciaux comme le point (.) et l'astérisque ne sont pas considérés comme spéciaux au sein d'un ensemble et n'ont donc pas besoin d'être échappés. 
+						Il est possible de donner un ensemble sur un intervalle de caractères en utilisant un tiret (-), comme le montre l'exemple qui suit.
+
+						Le motif [a-d],  aura les mêmes correspondances que [abcd], correspondant au 'b' de "bulle" et au 'c' de "ciel". Les motifis /[a-z.]+/ et /[\w.]+/ correspondront pour la chaîne entirère : "Adre.ss.e".
+						
+						[0123] un caractère parmi 0123
+						[246] un caractère parmi 2468
+						[13579] un caractère parmi 1357
+						
+						[abc] un caractère parmi abc
+						[aeiou] un caractère parmi les minuscules aeiou
+						[ACEHOXYZ] un caractère parmi les majuscules ACEHOXYZ
+
+						
+
+					Caractere	[A-Z]   : 
+					Caractere	[ premier_car - dernier_car ]    : 
+						correspond à une gamme de caractères ou n’importe quelle lettre minuscule (non-accentuée)
+						[0-5] un caractère parmi 012345
+						[0-9] un caractère parmi 0123456789
+						[a-m] un caractère parmi les minuscules abcdefghijklm
+						[a-z] un caractère parmi les minuscules abcdefghijklmnopqrstuvwxyz
+						[a-zA-Z] un caractère parmi abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+						[0-9a-zA-Z] un caractère parmi 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+						
+
+					Caractere	[^xyz]   : 
+					Caractere	[^ groupe_caractères_interdis ]    : 
+					Caractere	[^Caractere1Caractere2Caractere3]   :   
+						Exclusion d'un ensemble de caractères. Cela correspond à tout ce qui n'est pas compris entre crochets. Il est possible de fournir un intervalle de caractères en utilisant un tiret (-). Les autres règles qui s'appliquent pour l'ensemble de caractères (ci-avant) s'appliquent également ici.
+
+						Par exemple, [^abc] est équivalent à [^a-c]. Ils correspondent à 'u' dans "bulle" et à 'i' dans "ciel".
+						
+						[^0123] un caractère diférent de 0123
+						[0-9] un caractère diférent de 0123456789
+						
+						[^aeiou] un caractère diférent de aeiou
+						[^a-zA-Z] un caractère diférent de abcdefghijklmnopqrstuvwxyz ou ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+						
+
+					Caractere	\d   :   
+						Correspond à un chiffre et est équivalent à [0-9].
+						(équivaut à la classe [[:digit:]] de POSIX)
+						c'est à dire l'inverse de \D.
+
+						Ainsi, /\d/ ou /[0-9]/ ou /[^a-zA-Z]/ correspond à '2' dans "H2O est la molécule de l'eau".
+						
+						\D{m,n} : quantificateur borné pour au moins m et au plus n occurrences de ce qui précède.
+
+
+
+					Caractere	\D   :   
+						Correspond à un caractère non-chiffre,
+						c'est à dire tout caractère qui n'est pas un chiffre et est équivalent à [^0-9] ou [a-zA-Z].
+						(équivaut à la classe [^[:digit:]] de POSIX)
+						c'est à dire l'inverse de \d.
+
+						Ainsi, /\D/ ou /[^0-9]/ correspond à 'H' dans "H2O est la molécule de l'eau".
+
+
+
+					Caractere	\w   :   
+						Correspond un caractère lettre ou chiffre, 
+						c'est à dire à n'importe quel caractère alphanumérique, y compris le tiret bas. C'est équivalent à [0-9a-zA-Z_].
+						(n'équivaut pas à la classe [[:alnum:]] de POSIX)
+						c'est à dire l'inverse de \w
+
+						Ainsi, /\w/ correspond à 'l' dans "licorne", à '5' dans "5,28€", et à '3' dans "3D."
+
+
+
+					Caractere	\W   :   
+						Correspond à un caractère ni lettre, ni chiffre,
+						c'est à dire à n'importe quel caractère n'étant pas un caractère de mot. 
+						Cela est équivalent à [^A-Za-z0-9_].
+						(équivaut à la classe [^[:alnum:]] de POSIX)
+						c'est à dire l'inverse de \W
+
+						Ainsi, /\W/ ou /[^A-Za-z0-9_]/ correspond à '%' dans "50%."
+
+
+
+					Caractere	\X   :   
+					Caractere	\NombreEntier   :   
+						Soit n un entier strictement positif, cela fait référence au groupe de la n-ième expression entre parenthèses (en comptant les parenthèses ouvrantes).
+
+						Ainsi, /pomme(,)\spoire\1/ correspond à 'pomme, poire,' dans "pomme, poire, cerise, pêche".
+
+
+
+					Caractere	\cx   :   
+					Caractere	\cX   :   
+					Caractere	\cCaractere1   :   
+						Étant donné un caractère Caractere1 compris entre A-Z ou a-z.
+						Correspond au caractère de contrôle ASCII indiqué par x. La valeur de x doit être incluse dans la plage A-Z ou a-z. Si ce n'est pas le cas, c sera considéré comme un caractère "c" littéral. 
+
+						Ainsi, /\cM/ correspond au caractère de contrôle M (U+000D) d'une chaîne de caractère.
+
+
+
+					/* ******************************************************************* */
+					/* ******************************************************************* */
+					/* ******************************************************************* */
+
+
+
+					[:cntrl:] 	Caractère de contrôle 	[\x00-\x1F\x7F]
+					[:space:] 	Espace blanc ou séparateur de ligne ou de paragraphe 	[ \t\r\n\v\f]
+					[:blank:] 	Espace blanc ou tabulation non séparateur de ligne ou de paragraphe 	[ \t]
+					[:print:] 	Espace simple ou caractère graphique visible (voir ci-dessous la différence avec Perl). 	[\x20-\x7E]
+					[:graph:] 	Caractère graphique visible 	[\x21-\x7E]
+					[:punct:] 	Caractère de ponctuation 	[!"#$%&'()*+,-.\/:;?@[\\\]_`{|}~]
+					[:alnum:] 	Caractère alphanumérique 	[0-9a-zA-Z]
+					[:digit:] 	Chiffre décimal 	[0-9]
+					[:xdigit:] 	Chiffre hexadécimal 	[0-9a-fA-F]
+					[:alpha:] 	Caractère alphabétique 	[a-zA-Z]
+					[:lower:] 	Lettre minuscule 	[a-z]
+					[:upper:] 	Lettre capitale 	[A-Z]
+
+
+
+					/* ******************************************************************* */
+					/* ******************************************************************* */
+					/* ******************************************************************* */
+				-->
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire : formulaire 5 -->
+
+
+					<form autocomplete="on" method="post" action="fichier2.php" enctype="multipart/form-data" id='form1'>
+						<fieldset> <legend> Utilisateur </legend> 
+
+							<label for="id_Prenom"> Ceci est le label : Prenom : </label>
+							<input type="text" id="id_Prenom" placeholder="Prenom"  /> <br />
+							
+							<label for="id_Nom"> Nom: </label> 
+							<input type="text" id="id_Nom" placeholder="Nom"  /> <br />
+							
+							<label for="id_password"> Password: </label>
+							<input type="password" id="id_password" placeholder="password requi" required="required" /> <br />
+							
+							<label for="id_Code_postal"> Code postal: </label>
+							<input type="text" id="id_Code_postal" pattern="[0-9]{4,5}" title="Pattern : Three letter Code postal" /> <br />
+							
+							<label for="id_email"> E-mail: </label>
+							<input type="email" id="id_email" autocomplete="off" /> <br />
+							
+							<input type="image" src="./dossier/fichier1.jpg" alt="description" width="48" height="48" /> <br />
+							
+							<br/>
+							<br/>
+							
+							<img src="./dossier/fichier1.jpg" alt="description" width="48" height="48" /> <br/>
+							<input type="image" src="./dossier/fichier1.jpg" alt="description" width="48" height="48" /> <br/>
+							<input type="image" src="http://auto.img.v4.skyrock.net/3708/59043708/pics/2628227518_1.jpg" alt="description"/> <br/>
+							
+							<button>bouton0"</button><br/>
+							<input type="button" src="./dossier/fichier1.jpg" alt="description" width="48" height="48" value="bouton1" /> <br/>
+							<input type="button" src="http://auto.img.v4.skyrock.net/3708/59043708/pics/2628227518_1.jpg" value="bouton2" /> <br/>
+							<br/>
+							<br/>
+							
+						</fieldset>
+						
+						
+						<fieldset> <legend> Information : </legend> 
+						
+							<table>
+							
+								<tr>
+									<td>sexe : </td>
+									<td>
+										<input type="radio" name="sexe1" value="femme1" checked > : femme<br />	
+										<input type="radio" name="sexe1" value="homme1"> : homme<br />	
+										<input type="radio" name="sexe1" value="nc1"> : nc<br />	
+									</td>
+								</tr>
+								<tr>
+									<td>loisirs : </td>
+									<td>
+										<input type="checkbox" name="loisirs1" value="littérature1"> : littérature<br />	
+										<input type="checkbox" name="loisirs2" value="cinema1" checked > : cinema<br />	
+										<input type="checkbox" name="loisirs3" value="concert1"> : concert<br />	
+										<input type="checkbox" name="loisirs4" value="jeux1"> : jeux vidéos<br />	
+										<input type="checkbox" name="loisirs5" value="sport1"> : sport<br />	
+									</td>
+								</tr>
+								<tr>
+									<td>fonction</td>
+									<td>
+										<select name="fonction" size="3" multiple >
+											<optgroup label="test">
+												<option value="etudiant1">etudiant</option>
+												<option value="artisan1">artisan</option>
+											</optgroup>
+											<option value="fonctionnaire1">fonctionnaire</option>
+											<option value="patron1" selected>patron</option>
+											<option value="politicien1">politicien</option>
+											<option value="retraité1">retraité</option>
+											<option value="autre1">autre...</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>date de naissance : </td>
+									<td>
+										<select name="jour" size="1" >
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+										<select name="mois" size="1" >
+											<option value="01">janvier</option>
+											<option value="02">Février</option>
+											<option value="03">Mars</option>
+											<option value="04">Avril</option>
+											<option value="05">Mai</option>
+											<option value="06">Juin</option>
+											<option value="07">Juillet</option>
+											<option value="08">Août</option>
+											<option value="09">Septembre</option>
+											<option value="10">Octobre</option>
+											<option value="11">Novembre</option>
+											<option value="12">Décembre</option>
+										</select>
+										<select name="annee" size="1" >
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+											<option value="2003">2003</option>
+											<option value="2004">2004</option>
+											<option value="2005">2005</option>
+											<option value="2006">2006</option>
+											<option value="2007">2007</option>
+											<option value="2008">2008</option>
+											<option value="2009">2009</option>
+											<option value="2010">2010</option>
+											<option value="2011">2011</option>
+											<option value="2012">2012</option>
+											<option value="2013">2013</option>
+											<option value="2014">2014</option>
+											<option value="2015">2015</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>date de naissance2 : </td>
+									<td>
+										<label for="labelnaissance211"> date :  </label> 
+										<input id="labelnaissance211" type="date" min="1900-01-01" max="2020-12-31"/>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>date de naissance2 : </td>
+									<td>
+										<label for="labelnaissance212"> datetime-local :  </label> 
+										<input id="labelnaissance212" type="datetime-local"/>
+										<br/>
+										
+										<label for="labelnaissance213"> week :  </label> 
+										<input id="labelnaissance213" type="week"/>
+										<br/>
+										
+										<label for="labelnaissance214"> month :  </label> 
+										<input id="labelnaissance214" type="month"/>
+									</td>
+								</tr>
+								<tr>
+									<td>date de naissance3 : </td>
+									<td>
+										<label for="labelnaissance3"> number :  </label> 
+										<input id="labelnaissance3" name='jour' type="number" min="01" max="31" />
+										<input id="labelnaissance3" name='mois' type="number" min="01" max="12" />
+										<input id="labelnaissance3" name='annee' type="number" min="1900" max="2015" step="10"/>
+									</td>
+								</tr>
+								<tr><td>commentaire</td><td><textarea rows="7" name="commentaires1" > tapez ici ... </textarea>	</td></tr>
+								<tr><td>commentaire en lecture seul</td><td><textarea rows="3" name="commentaires2" readonly="readonly"> tapez ici ... </textarea>	</td></tr>
+								<tr><td>commentaire avec placeholder</td><td><textarea rows="3" name="commentaires2" placeholder="placeholder..."></textarea>	</td></tr>
+								<tr><td>Fichier : </td><td><input type="file" name="ficher1"></td>
+								<tr>
+								
+							</table>
+							
+						</fieldset>
+
+						<fieldset> <legend> Nouveauté HTML 5 : </legend> 
+							<label > time: <input type="time" name="usr_time"> </label> <br />
+							<label > date: <input type="date" name="bday"> </label> <br />
+							<label > datetime (date and time): <input type="datetime" name="datetime1"> </label> <br />
+							<label > datetime-local (date and time): <input type="datetime-local" name="datetime-local1"> </label> <br />
+							<label > month (month and year): <input type="month" name="month1"> </label> <br />
+							<label > week: <input type="week" name="week1"> </label> <br />
+							<label > min 2000-01-02: <input type="date" name="date2" min="2000-01-02" /> </label> <br />
+							<label > max 1979-12-31: <input type="date" name="date1" max="1979-12-31" /> </label> <br />
+							<label > number (min 1 and max 5): <input type="number" name="number1" min="1" max="5" /> </label> <br />
+							<label > Range: <input type="range" name="range1" min="1" max="10"> </label> <br />
+							<label > Search : <input type="search" name="search1"> </label> <br />
+							<label > tel: <input type="tel" name="tel1"> </label> <br />
+							<label > url: <input type="url" name="url1"> </label> <br />
+							<label > color: <input type="color" name="color"> </label> <br />
+
+							<input list="Navigateur1" name="Navigateur1" />
+							
+							<datalist id="Navigateur1">
+								<option value="Internet Explorer" />
+								<option value="Firefox" />
+								<option value="Chrome" />
+								<option value="Opera" />
+								<option value="Safari" />
+							</datalist> <br />
+
+							<input list="Navigateur2" name="Navigateur2" placeholder="Texte par défaut1..."/>
+							
+							<datalist id="Navigateur2" >
+								<option value="Internet Explorer" />
+								<option value="Firefox" />
+								<option value="Chrome" />
+								<option value="Opera" />
+								<option value="Safari" />
+							</datalist> <br />
+
+							Try selecting more than one file when browsing for files. <br />
+							Select images: <input type="file" name="img" multiple="multiple" />
+						</fieldset>
+
+						<fieldset> <legend> Validation </legend> 
+							<input type="submit" value="Envoyer" /> 
+							<input type="reset" value="Réinitialisez" /> 
+						</fieldset>
+					</form>
+
+
+
+
+
+		<!-- Commentaire : attributs de formulaire -->
+
+		<h3> attributs de formulaire HTML : </h3> 
+		<!--
+		
+				* id         : identifiant de la balise
+				* name       : nom du champ
+				* value      : valeur par defaut du champ
+				* size       : taille du champs
+				* maxlength  : longueur maximal du contenu saisi
+				* multiple   : valeurs multiples
+				* readonly   : champ en lecture seul
+				* disable    : desactivation du champ
+				* form       : formulaire lié
+				
+		-->
+
+		<h3> attributs de formulaire HTML 5 complementaires : </h3> 
+		<!--
+		
+				* placeholder   : texte par défaut, exemple de saisie
+				* pattern       : masque de saisie avec une expression reguliere
+				* autofocus     : donne le focus ou la selection des l'ouverture de la page
+				* autocomplete  : autocompletion, proposition de mot
+				* required      : champ requis, obligatoire
+				* list          : liste de suggestions
+				* dirname       : direction de saisie
+				
+		-->
+
+
+
+
+
+		<h3> Contrainte de validation grace aux attributs HTML et/ou aux pseudos sélecteurs CSS : <h3>
+		<!--
+		
+			Contrainte de validation grace aux attributs HTML : 
+			
+			disabled       : Indique que l'élément d'entrée doit être désactivée
+			max            : Indique la valeur maximale d'un élément d'entrée
+			min            : Indique la valeur minimale d'un élément d'entrée
+			pattern        : Indique le modèle d'un élément d'entrée de valeur
+			required       : Indique que le champ de saisie nécessite un élément
+			type           : Indique le type d'un élément d'entrée
+			
+
+			
+			Contrainte de validation grace aux pseudos sélecteurs CSS : 
+			
+			:disabled       : Sélectionne les éléments avec l'attribut "disabled" spécifiée
+			:invalid        : Sélectionne les éléments avec des valeurs invalides
+			:optional       : Sélectionne les éléments avec aucun attribut "optional" spécifiée
+			:required       : Sélectionne les éléments avec l'attribut "required" spécifiée
+			:valid          : Sélectionne les éléments avec des valeurs valides
+		
+		 -->
+
+
+
+
+
+		<h3> Balise pour le formulaire : </h3> 
+
+			<form>	 définit un formulaire HTML pour la saisie de l'utilisateur
+			<input>	 définit un contrôle d'entrée
+			<textarea>	 définit un contrôle d'entrée multiligne (zone de texte)
+			<label>	 Définit une étiquette pour un élément <input>
+			<fieldset>	 Groupes liées éléments 
+			<legend>	 Définit une légende pour un élément <fieldset>
+			<select>	 Définit une liste déroulante
+			<optgroup>	 définit un groupe d'options connexes dans une liste déroulante
+			<option>	 Définit une option dans une liste déroulante
+			<button type="button">	 Définit un bouton cliquable
+			<input type="image">	 définit une image
+			<input type="button">	 définit un contrôle d'entrée
+			<datalist>	 spécifie une liste d'options prédéfinies pour les contrôles d'entrée
+			<keygen>	 définit un champ de générateur de jeu de clés (pour les formulaires)
+			<output>	 Définit le résultat d'un calcul
+
+
+
+
+
+		<input type = ? >
+						text
+						password
+						radio
+						checkbox
+						image
+						button
+						file
+						hidden
+						reset
+						submit
+						
+		<input type = ? > (nouveaute HTML5) 
+						tel
+						email
+						url
+						color
+						search
+						number
+						time
+						date
+						NE MARCHE PAS !!! datetime
+						datetime-local
+						week 
+						month
+						range
+
+		Liste des attributs de balises intergés au formulaire : 
+
+					name="text..." 	Specifies the name of an <input> element
+					id="text..." 	Specifies the identification of an <input> element
+					value="text..." 	Specifies the value of an <input> element
+
+					size="number" 	Specifies the width, in characters, of an <input> element
+					maxlength="number" 	Specifies the maximum number of characters allowed in an <input> element
+					checked="checked" 	Specifies that an <input> element should be pre-selected when the page loads (for type="checkbox" or type="radio")
+					readonly="readonly" 	Specifies that an input field is read-only
+					disabled="disabled" 	Specifies that an <input> element should be disabled
+					multiple="multiple" 	Specifies that a user can enter more than one value in an <input> element
+
+					align="left, right, top, middle, bottom"	(only for type="image", Not supported in HTML5)
+					alt="text..." 	Specifies an alternate text for images (only for type="image")
+					height="pixels" 	Specifies the height of an <input> element (only for type="image")
+					width="pixels" 	Specifies the width of an <input> element (only for type="image")
+					src="URL" 	Specifies the URL of the image to use as a submit button (only for type="image")
+
+					placeholder"text..." 	Specifies a short hint that describes the expected value of an <input> element
+					autocomplete="on,off" 	Specifies whether an <input> element should have autocomplete enabled
+					autofocus="autofocus" 	Specifies that an <input> element should automatically get focus when the page loads
+					pattern="regexp..." 	Specifies a regular expression that an <input> element's value is checked against
+					list="datalist_id" 	Refers to a <datalist> element that contains pre-defined options for an <input> element
+					   <input list="browsers"> <datalist id="browsers"> <option value="Internet Explorer"> ... </datalist> 
+
+					required="required" 	Specifies that an input field must be filled out before submitting the form
+					formnovalidate="formnovalidate" 	Defines that form elements should not be validated when submitted
+					formtarget="_blank, _self, _parent, _top, framename" 	Specifies where to display the response that is received after submitting the form (for type="submit" and type="image")
+									
+					min="number_date" 	Specifies a minimum value for an <input> element
+					max="number_date"	Specifies the maximum value for an <input> element
+					step="number" 	Specifies the legal number intervals for an input field
+
+
+
+
+
+
+		<!-- Commentaire : DIV et SPAN : Balise foure tout -->
+
+		<br />
+		
+		<div> un DIV </div>	<div> deux DIV </div><div> trois DIV </div>
+		<span> un SPAN </span>
+		<span> deux SPAN </span>
+		<span> trois SPAN </span>
+
+		<br />
+
+
+
+
+
+
+
+
+
+
+		<h2>Utilisation de DIV et de SPAN pour faire un tableau</h2>
+		
+		Prenons le tableau utilisant les balises table, ci dessous	<br />
+
+
+		
+		<table border="1px">
+			<caption> Tableau1 </caption>
+			<tr><td>1er colonne</td><td>2e colonne</td></tr>
+			<tr><td>1er colonne</td><td>2e colonne</td></tr>
+			<tr><td>1er colonne</td><td>2e colonne</td></tr>
+		</table>
+
+		<br />
+
+		Transformons-le avec des DIV et des SPAN :	<br />
+
+		<div style="border:1px solid black;">
+			<div  style="border:1px solid red;">Tableau2 </div>
+			<div style="border:1px solid red;"><span>1er colonne</span> &nbsp; <span>2e colonne</span></div>
+			<div style="border:1px solid red;"><span>1er colonne</span> &nbsp; <span>2e colonne</span></div>
+			<div style="border:1px solid red;"><span>1er colonne</span> &nbsp; <span>2e colonne</span></div>
+		</div>
+
+		<br />
+
+
+
+
+
+
+
+
+
+
+		<!-- Commentaire :  Nouvelle balise HTML5 -->
+		
+		<h2> Nouvelle balise HTML5 </h2>
+		
+				header   <!--   Description : En-tete du contenu affiche mais peut etre l'en-tete d'un article   -->
+				hgroup   <!--   Description : Groupe de titres   -->
+				nav      <!--   Description : Navigation, regroupement de liens pour la navigation   -->
+				aside   <!--   Description : Aparte, contenu independant lie au site : definition, digression, sidebar, complement, ...   -->
+				menu   <!--   Description : Menu contextuel ou barre d'outils   -->
+				section   <!--   Description : Section, regroupement de contenu   -->
+				article   <!--   Description : Article, portion de contenu de press, fiche, reponse, commentaire   -->
+				footer   <!--   Description : Pied page du contenu affiche mais peut etre le pied d'un article   -->
+				
+				audio   <!--   Description : insertion d'audio   -->
+				video   <!--   Description : insertion de video   -->
+				source   <!--   Description : source de l'audio ou video   -->
+				
+				canvas   <!--   Description : zone de dessin 2D ou 3D   -->
+				figure   <!--   Description : Unite de contenu, regroupement d'illustration   -->
+				figcaption   <!--   Description : legende de figure   -->
+				datalist   <!--   Description : liste de suggestions predefinies   -->
+				time   <!--   Description : balise attribuant une signification a la date et heure   -->
+				mark   <!--   Description : mise en valeur, surligne   -->
+				bdo   <!--   Description : modification du sens de lecture   -->
+				bdi   <!--   Description : isolation de l'inversion de sens d'ecriture   -->
+				details   <!--   Description : details, informations ou controls additionnels   -->
+				summary   <!--   Description : resume, legende ou intitule   -->
+				track   <!--   Description : Piste de texte, sous-titres   -->
+				command   <!--   Description : Command de menu declanche habituellemnt par un script   -->
+				wbr   <!--   Description : indication d'opportunité de cesure de mot   -->
+				output   <!--   Description : Resultat d'une operation   -->
+				progress   <!--   Description : represente une barre de progression   -->
+				meter   <!--   Description : represente une jauge   -->
+				keygen   <!--   Description : generateur de cles   -->
+				iframe
+				
+		
+		
+		<h2> attribut globaux applicables à tous les element HTML 5 : </h2> 
+		
+				* contenteditable  <!--   Description : contenu editable dynamiquement   -->
+				* contextmenu  <!--   Description : menu contextuel   -->
+				* draggable  <!--   Description : element deplacable   -->
+				* dropezone  <!--   Description : zone de depot   -->
+				* hidden  <!--   Description : contenu inaccessible   -->
+				* spellcheck  <!--   Description : correction orthographique   -->
+		
+		
+		
+
+
+		<!-- Commentaire :  Nouvelle balise HTML5 de structure -->
+
+
+		<header> Titre 
+			<h1>h1 de la page HTML5</h1>
+			<h2>h2 de la page HTML5</h2>
+		</header>
+		
+		<nav> Navigation interne : <a href="#">Lien</a> <a href="#">Lien</a> <a href="#">Lien</a> </nav>
+		
+		<main>
+			<section> section : 
+				<article>
+					<h1>h1 de article 1</h1>
+					<p>article 1 article 1 article 1 article 1 article 1 ...</p>
+				</article>
+				
+				<article>
+					<header> <h1>h1 de article 2</h1> </header> 
+						<p>article 2 article 2 article 2 article 2 article 2 ...</p>
+					<footer> Pied </footer>
+				</article>
+			</section>
+		</main>
+		
+		<aside> <h1>SIDEBAR</h1> Navigation externe : <br /> <a href="#">Lien</a> <a href="#">Lien</a> <a href="#">Lien</a> </aside>
+		
+		<footer id="footer1"> Pied </footer>
+
+
+
+
+
+
+
+
+
+
+		<!--
+
+
+
+
+
+
+
+
+
+
+		Bonnes pratiques SEO
+
+
+
+		Rubrique 	 	Libellé
+
+
+
+		_Alternatives
+						Chaque image ou élément non textuel est dotée d'une alternative textuelle.
+						Chaque contenu audio et vidéo est accompagné de sa transcription textuelle.
+						Les textes mis en images sont reproduits dans l'alternative textuelle.
+						La longueur des alternatives textuelles est inférieure ou égale à 80 caractères.
+						Les termes présents dans l'alternative textuelle des images sont également présents dans le contenu de la page.
+
+
+
+		_Cadres
+						Le site n'emploie pas la technique des jeux de cadres.
+						Si le site utilise la technique des jeux de cadres, l'élément NOFRAME est utilisé.
+						Le contenu de chaque élément noframe décrit le contenu du cadre.
+						Le contenu de chaque élément noframe n'est pas limité à une liste de mots-clés.
+
+
+
+		_Structure
+						Chaque page du site contient un élément de titre de section H1.
+						Le contenu visé pour le référencement est mis en exergue (strong ou em).
+						Le contenu de chaque page est organisé selon une structure de titres de section HTML.
+						Les titres de section HTML comportent des mots clefs contenus dans la balise meta keywords.
+						Le contenu textuel propre à chaque page précède les éléments de navigation.
+						Le site comporte autant de titres de section H1 différents que de pages.
+
+
+
+		_Contenu
+						Le contenu du site est mis à jour au moins une fois par mois.
+						La page d'accueil du site n'est pas une page tunnel ou une introduction en flash.
+						La page d'accueil expose la nature des contenus et services proposés.
+						L'adresse et le numéro de téléphone de l'entreprise sont disponibles sous forme textuelle.
+						Les formats d'images utilisés sont indexables par les principaux moteurs de recherche d'image.
+						Javascript ou les styles CSS ne sont pas utilisés pour masquer un contenu de façon permanente.
+						Le texte des documents PDF internes est sélectionnable.
+						Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens.
+						Les images sont cohérentes avec les contenus de la page.
+						Le nom de fichier des images significatives est cohérent avec leur contenu.
+
+
+
+		_Domaines
+						Le site propose plusieurs répertoires et/ou sous-domaines.
+						Le contenu de chaque nom de domaine lui est propre.
+						Chaque langue proposée fait l'objet d'un domaine ou d'un sous-domaine différent.
+						Les sous domaines et répertoires linguistiques utilisent le registre de code IANA.
+						Hors extensions génériques, l'extension du nom de domaine correspond à la zone géographique visée.
+						Si le nom de domaine correspond à une zone géographique, le site est hébergé dans cette zone.
+
+
+
+		_Hyperliens
+						Le libellé de chaque hyperlien décrit sa fonction ou la nature du contenu vers lequel il pointe.
+						Les liens qui ne sont pas en rapport avec les contenus ou services proposés sont déclarés en nofollow.
+						Les adresses URL ne contiennent pas d'indication concernant les paramètres de session.
+						Les URL des liens internes contiennent exclusivement des caractères alphanumériques ou considérés comme sûrs.
+						Les liens externes sont en rapport avec les contenus ou services proposés.
+						Les URL contiennent des termes présents dans les titres de pages.
+						Le nombre de liens externes dans une page n'excède pas le nombre de liens internes.
+						Des libellés de liens identiques pointent vers la même page.
+						Tous les hyperliens du site sont valides.
+						Les liens internes utilisent une URL unique pour chaque page.
+
+
+
+		_Métadonnées
+						Le code source de chaque page contient une metadonnée qui en décrit le contenu.
+						Le contenu de chaque élément meta keywords est inférieur ou égal à 10 termes.
+						La méta keywords contient exclusivement des termes en rapport direct avec le contenu.
+						Le titre de chaque page (élément TITLE) permet d'identifier son contenu.
+						Le contenu de chaque élément TITLE est inférieur ou égal à 80 caractères
+						Le contenu de l'élément TITLE de chaque page ne commence pas par le nom du site.
+						Le code source de chaque page contient une metadonnée qui définit le jeu de caractères.
+						Le contenu de l'élément meta description est une phrase significative et non une liste de mots clefs.
+						Le nombre de caractères contenus dans la balise META Description est inférieur ou égal à 250.
+						Le code source de chaque page indique la langue principale du contenu.
+						Le site compte autant de meta description différentes que de pages.
+
+
+
+		_Navigation
+						La navigation est possible via des liens HTML.
+						Le site propose un plan du site contenant des liens HTML.
+						L'accès aux contenus significatifs n'est pas conditionné par des actions de formulaires.
+						L'accès aux contenus significatifs n'est pas conditionnée par le support de javascript.
+						L'accès aux contenus significatifs n'est pas conditionné par le support des cookies.
+						Le site propose un fil d'Ariane.
+						Le site propose un fichier sitemap indiquant les contenus à explorer.
+						Le fichier robots.txt propose une référence valide à un fichier sitemap.
+						La racine du site contient des instructions pour les robots d'indexation.
+						Le temps de rafraichissement indiqué dans le fichier sitemap est cohérent avec la fréquence de mise à jour du site.
+						Le site fait l'objet de liens entrants.
+						Le site n'interdit pas la mise en place de liens entrants.
+						Le plan du site est accessible depuis la page d'accueil.
+						Les libellés du menu principal de navigation sont cohérents avec le contenu des rubriques.
+						Le site ne contient pas de liens vers des pages en construction.
+						Les vidéos sont soumises à au moins deux diffuseurs externes.
+						Les menus sont utilisables sans extension (flash...) ou activation de langages (CSS ou JavaScript..).
+						Les contenus du site sont consultables sans extension (flash...) ou activation de langages (CSS ou JavaScript..).
+
+
+
+		_Présentation
+						Les styles ne sont pas utilisés pour générer du contenu.
+						Les mises en majuscules à des fins décoratives sont effectuées à l'aide des styles CSS.
+						Les textes pouvant être mis en forme via des styles ne sont pas remplacés par des images
+						Les contenus HTML sont mis en forme à l'aide de styles CSS externalisés.
+
+
+
+		_Serveur
+						Si le site propose des redirections, celles-ci sont permanentes (code 301).
+						Le serveur envoie un code HTTP 404 pour les ressources non trouvées.
+						Les URL alternatives vers la page d'accueil font l'objet d'une redirection 301 vers l'URL principale.
+						Les noms de domaine secondaires redirigent en 301 vers le nom de domaine principal.
+						Les URL alternatives vers chaque page font l'objet d'une redirection 301 vers l'URL principale.
+						Le site et le serveur sont configurés pour délivrer les pages de manière performante. 
+
+
+
+
+
+
+
+
+
+
+		-->
+		</body>
+</html>
